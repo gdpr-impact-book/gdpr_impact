@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"
+author: "Bernd Skiera, Klaus Miller, Yuxi Jin, Lennart Kraft, Rene Laub, Julia Schmitt"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
