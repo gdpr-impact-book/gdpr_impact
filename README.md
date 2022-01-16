@@ -1,4 +1,4 @@
-This repository contains the online version of the book "The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"
+This repository contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written byBernd Skiera, Klaus Miller, Yuxi Jin, Lennar Kraft, René Laub and Julia Schmitt.
 
 # What will you learn from this book? 
 
@@ -21,3 +21,5 @@ Anyone interested in learning how and why the online advertising industry benefi
 # Who wrote this book?
 
 The European Research Council provided Professor Skiera at Goethe University Frankfurt (Germany) with a substantial (ERC Advanced) research grant to examine the economic consequences of stronger restrictions on tracking technologies. Professor Skiera and his team pursued several empirical projects to demonstrate these consequences.
+
+<img src="images/front_cover.jpg" width="209"/>
