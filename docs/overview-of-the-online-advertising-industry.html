@@ -24,15 +24,15 @@
 <meta name="author" content="Bernd Skiera, Klaus Miller, Yuxi Jin, Lennart Kraft, Rene Laub, Julia Schmitt" />
 
 
-<meta name="date" content="2022-01-11" />
+<meta name="date" content="2022-01-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="user-tracking-profiling-and-targeting-in-online-advertising.html"/>
+<link rel="prev" href="introduction.html"/>
+
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -73,9 +73,15 @@
 <li><a href="./">GDPR Impact</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html"><i class="fa fa-check"></i><b>2</b> Overview of the Online Advertising Industry</a></li>
-<li class="chapter" data-level="3" data-path="user-tracking-profiling-and-targeting-in-online-advertising.html"><a href="user-tracking-profiling-and-targeting-in-online-advertising.html"><i class="fa fa-check"></i><b>3</b> User Tracking, Profiling and Targeting in Online Advertising</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html"><i class="fa fa-check"></i><b>2</b> Overview of the Online Advertising Industry</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html#essential-actors-advertisers-publishers-and-users"><i class="fa fa-check"></i><b>2.1</b> Essential Actors: Advertisers, Publishers and Users</a></li>
+<li class="chapter" data-level="2.2" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html#scope-and-types-of-online-advertising"><i class="fa fa-check"></i><b>2.2</b> Scope and Types of Online Advertising</a></li>
+<li class="chapter" data-level="2.3" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html#real-time-bidding-as-a-process-of-selling-online-advertising"><i class="fa fa-check"></i><b>2.3</b> Real-Time Bidding as a Process of Selling Online Advertising</a></li>
+<li class="chapter" data-level="2.4" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html#description-of-other-actors"><i class="fa fa-check"></i><b>2.4</b> Description of Other Actors</a></li>
+<li class="chapter" data-level="2.5" data-path="overview-of-the-online-advertising-industry.html"><a href="overview-of-the-online-advertising-industry.html#main-takeaways"><i class="fa fa-check"></i><b>2.5</b> Main Takeaways</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -97,15 +103,151 @@
             <section class="normal" id="section-">
 <div id="overview-of-the-online-advertising-industry" class="section level1" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Overview of the Online Advertising Industry</h1>
+<div id="essential-actors-advertisers-publishers-and-users" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Essential Actors: Advertisers, Publishers and Users</h2>
+<p>Online advertising is, in basic terms, a process in which an advertiser pays a publisher to present an ad to a user on the publisher’s property (usually a website or an app).
+Thus, there are three essential actors in online advertising (in alphabetical order):</p>
+<ul>
+<li><p>the <em>advertiser</em>, who wishes to draw the user’s interest to the advertiser’s offerings;</p></li>
+<li><p>the <em>publisher</em>, who has some space to show ads and would like to “monetize the user” by selling those ad spaces to the advertiser;</p></li>
+<li><p>the <em>user</em>, who is primarily interested in the publisher’s offering (e.g., the content of a news website) and is sometimes also interested in the ads displayed on the site.</p></li>
+</ul>
+<p>Figure 1 outlines the business models of advertisers and publishers; the exchanges that occur among advertisers, publishers and users; and the (often implicit) agreements among them.</p>
+<div class="figure">
+<img src="images/figure1-01.png" alt="" />
+<p class="caption">Figure 1: Interplay among the Essential Actors of the Online Advertising Market</p>
+</div>
+<p>Many publishers offer users “free” access to their content—e.g., news—in exchange for the ability to collect data from these users, as well as to provide other actors, such as advertisers, with opportunities to contact the users.
+Thus, even when users ostensibly receive content without paying for it, they are still paying—not with money but with their data and willingness to view ads.
+Advertisers pay publishers for the opportunity to contact users and, to a lesser extent, pay for data about those users.
+Advertisers then proceed to display ads to users and, in cases in which relevant data are available, they may target certain users and even personalize ads to their preferences.
+Users, in turn, are expected to see those ads and, at least in some cases, to “purchase” the advertiser’s offerings—where a purchase is broadly defined as a desired action that benefits the advertiser (including, for example, buying products, subscribing to an online newsletter, signing up for a test drive of a car, downloading a document, or donating).
+At the heart of this interplay between the various actors is the tracking of users, which provides advertisers with two key capabilities.
+The first is the capacity to process data about users for profiling, which enables advertisers to better target ads to appropriate users, and thus to avoid wastage of ads.
+For example, an advertiser likely prefers to avoid sending a male user an ad for female hygiene products (and the other way around).
+The second is the capacity to recognize, at least to some extent, whether the ads are successful—which, in turn, enables the advertiser to determine whether it is worthwhile to continue spending money on a given publisher (and, ultimately, on the publisher’s users).
+For example, if an ad served on a particular publisher does not receive any user reaction (as measured, e.g., by clicks on the ad), the advertiser might then conclude that, for the specific advertisement, the publisher does not attract the right audience, i.e., the right type of user.
+Alongside these benefits, however, user tracking raises privacy concerns, as elaborated in subsequent sections.</p>
+</div>
+<div id="scope-and-types-of-online-advertising" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Scope and Types of Online Advertising</h2>
+<p>The online advertising industry is large and represents an essential part of the economy.
+Internet advertising revenues have grown consistently over recent years; in 2020, for example, the growth rate in the US was an impressive 12.2%, with revenues reaching $139.8b (IAB 2021).
+Advertisers spent 70% of all online advertising funds on advertising on mobile devices (including smartphones and tablets) and 30% on desktop platforms.
+Regarding ad format, the largest share of funds (42.2%, see Figure 2) is spent on search engine ads, i.e., ads delivered via search engines, notably Google.
+Display advertising (i.e., banner advertising) represents the second-largest share (31.5%), and video advertising, e.g., on YouTube, the third-largest share (18.7%).
+Other forms of online advertising (e.g., classified advertising, audio formats, lead generation ads) play a minor role.
+The ad-selling market is highly concentrated; indeed, in 2020, the top 10 publishers realized 78.1% of all advertising revenues (IAB 2021).
+Google and Facebook are by far the two largest publishers in the Western world.
+The ad-buying marketing is far less concentrated, i.e., there are no advertisers that dominate the demand side in a manner comparable to Google and Facebook on the supply side.</p>
+<div class="figure">
+<img src="images/figure2.png" alt="" />
+<p class="caption">Figure 2: Size and Share of Figure 2: Different Formats of Online Advertising in the US (IAB 2021)</p>
+</div>
+<p>Figure 3 outlines the digital advertising spend per capita for selected European countries (IAB 2020).
+Advertising expenditures per internet user are, by far, highest in the UK (324.70€), followed by Norway (231.30€), Sweden (229.40€), Switzerland (212.40€) and Denmark (194.80€).
+In Germany, the average amount spent per Internet user is 113.40€.
+Figure 3: Digital Advertising Spend per Capita in 15 countries (IAB 2020)</p>
+<div class="figure">
+<img src="images/figure3.png" alt="" />
+<p class="caption">Figure 3: Digital Advertising Spend per Capita in 15 countries (IAB 2020)</p>
+</div>
+</div>
+<div id="real-time-bidding-as-a-process-of-selling-online-advertising" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Real-Time Bidding as a Process of Selling Online Advertising</h2>
+<p>In this subsection, we describe a prominent process of selling online advertising, which we refer to as “real-time bidding” (RTB), and which is also referred to in the industry as “programmatic advertising”, because advertisers and publishers use algorithms to buy and sell advertising (Kosorin 2016).
+The 2021 IAB report (IAB 2021) outlines that 88% of ads (excluding search) sell as programmatic advertising.
+This process constitutes a key source of concern for regulators and privacy advocates.
+For clarity of presentation, in what follows, our discussion focuses primarily on online display advertising (also referred to as banner advertising) but selling digital video ads shares many characteristics.
+Online display advertising is well known to most users and raises many privacy concerns because it often involves exchanging data between firms.
+It uses an auction-based system to sell ads, as search ads also do.
+Other forms of advertising, including traditional offline advertising such as TV and outdoor, gradually implement comparable systems.
+Real-time bidding is a collective term for the technological infrastructure used to sell opportunities to display an ad in real-time and in a fully automated manner (Yuan, Wang, and Zhao 2013, Wang, Zhang, and Yuan 2017).
+In many cases, selling occurs via real-time auctions that run for less than 100 milliseconds (for reference, a blink of an eye takes 200-400 milliseconds).
+Ad exchanges (e.g., Xandr), marketplaces that connect advertisers and publishers, frequently serve as platforms for such real-time auctions (Cristal 2014, Kosorin 2016, Lee, Jalali, and Dasdan 2013, Information Commissioner’s Office 2019; Ada, Abou Nabout, and McDonnell Feit 2022).
+Figure 4 illustrates the automated auction process under real-time bidding.
+For convenience, we refer to a scenario in which an ad slot is being sold on a website, but the general process we describe is applicable to other online media that belong to a publisher and contain ad slots, such as apps.
+As shown in the figure, whenever a user visits a publisher’s website with ad slots (1), the publisher sends an ad call to an ad exchange (2).
+This ad call is a request to run a real-time auction on the ad exchange and contains information about, for example, the properties of the ad slot (e.g., ad size) and a user ID, which we explain in more detail in Section 3.1.
+The ad exchange then sends a bid request to all advertisers on the ad exchange (3).
+Each interested advertiser submits a bid for displaying its ad to the user; the bid also includes the ad server’s address with the ad (4).
+The ad exchange determines the price and the winner of the auction and forwards this information to the publisher (5).
+The publisher then asks the user’s browser to load the ad from the ad server (6), and the ad is subsequently displayed to the user on the publisher’s website (7).</p>
+<div class="figure">
+<img src="images/figure%204.png" alt="" />
+<p class="caption">Figure 4: Illustration of the Auction Process in Real-Time Bidding (RTB)</p>
+</div>
+<p>This description of the real-time auction process is a simplification, because it only captures essential steps (for more details, see Cristal 2014, Kosorin 2016, Trusov, Ma, and Jamal 2016 or Wang, Zhang, and Yuan 2017).
+It does not consider, for example, the specific requirements imposed by privacy laws such as the GDPR (which we will outline later in Section 6 when discussing the Transparency and Consent Framework (TCF)).
+In addition, it is important to acknowledge that there are many other actors that support the activities of advertisers and publishers (Luma Partners 2021).
+We describe these other actors in the following subsection.</p>
+</div>
+<div id="description-of-other-actors" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Description of Other Actors</h2>
+<p>Figure 5 classifies the numerous actors in the online advertising industry into several main groups that we will not all cover here.</p>
+<div class="figure">
+<img src="images/figure5.png" title="Figure 5: Overview of Actors in the Online Advertising Industry (DisplayLUMAscape)" alt="" />
+<p class="caption">Figure 5: Overview of Actors in the Online Advertising Industry (DisplayLUMAscape)</p>
+</div>
+<p>Note that Luma Partners (2021) refer in this figure to an advertiser as a “marketer” and to users as “people”.</p>
+<p>An ad exchange, as noted above, is a marketplace where the demand side, i.e., advertisers, and the supply side, i.e., publishers, meet to fill ad slots (offered by publishers) with ads (provided by advertisers).
+A demand-side platform (DSP) is a technology provider that supports the advertiser buying ad slots.
+A supply-side platform (SSP) provides technology to support the publisher selling its ad slots.
+An advertising agency helps the advertiser with the creation of the ad.
+An ad server is a web server (i.e., a computer) that stores advertising content (e.g., banner ads).
+It delivers that content to the publisher’s ad slot and, thus, the user (in our setting, the user’s browser).
+Many additional actors exist that support the process of selling ad slots and delivering ads to those ad slots.
+Among them are data management platforms (DMPs), which provide data about the user (e.g., demographics or user interests), or verification providers that verify that an ad appears on the correct publisher.
+The advertiser and the publisher have to finance all actors.
+As a result, the price that the advertiser pays for an ad is often much higher than the amount that the publisher receives.
+Google, for example, outlines that its publishers received over 69% of the money that the advertiser paid (Hsiao 2020).
+The share of the money that the publisher receives goes further down if the seller and buying of ads involve more actors.
+For example, the Guardian reports that this share can drop to 30% (Pidgeon 2016).</p>
+<p>Figure 6 provides a schematic illustration of how the various actors operate together to produce what the user ultimately views (in terms of both content and ads).
+In effect, when the user visits a publisher’s website (e.g., a news website), two processes are initiated.
+The first process (marked in orange) delivers the website’s primary content (in our example, news content).
+This content is available on the publisher’s content server.
+The second process (marked in blue) is the process through which ads slots are sold and ads are delivered to the user.
+Our discussion focuses on the latter process; accordingly, in Figure 6, the process marked in orange is simplified and does not include other actors that may be involved in content delivery, such as measurement and analytics providers that track, for example, how often a user saw certain content and that help the publisher optimize its content.</p>
+<div class="figure">
+<img src="images/figure%206.png" title="Figure 6: Delivery of Content and Ads from the User&#39;s Perspective when Visiting a Website" alt="" />
+<p class="caption">Figure 6: Delivery of Content and Ads from the User’s Perspective when Visiting a Website</p>
+</div>
+<p>The process of selling ad slots and delivering ads involves the following steps.
+The publisher’s ad server recognizes an available ad slot (usually even multiple ad slots) that the publisher would like to fill with an ad.
+The ad server approaches the supply-side platform (SSP) with a request to sell the ad slot on the ad exchange.
+The SSP sets up the auction on the ad exchange, and the ad exchange approaches the advertisers, usually via several demand-side platforms (DSPs), with a request for a quote for the ad slot, i.e., offering the opportunity to buy the opportunity to display an ad to the specific user.
+It is essential to understand that any data that the publisher reveals can spread to many other actors.
+That is a concern that Ryan (2018) raises.
+He outlines that it is technically feasible to share a wide range of information along the chain outlined in Figure 6.
+Such sharing raises privacy concerns.
+It is, however, less clear whether and how intensively sharing of personal data occurs.</p>
+</div>
+<div id="main-takeaways" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Main Takeaways</h2>
+<p>The main takeaways from Section 2 are:</p>
+<ul>
+<li><p>The three main actors in the online advertising industry are advertisers, publishers, and users.
+Between each pair of actors, a transaction takes place—whether implicitly or explicitly agreed upon.</p></li>
+<li><p>70% of online advertising occurs on mobile devices (including smartphones and tablets).
+The main advertising formats are search engine advertising, online display advertising and video advertising.</p></li>
+<li><p>Real-time bidding is the primary process through which the selling of display advertising occurs.
+Data sharing in real-time bidding is a source of privacy concerns.</p></li>
+<li><p>Many publishers rely on advertising to finance their content.
+They often do not charge users, but users then pay by providing publishers and advertisers (often implicitly) with data, as well as willingness to view ads.</p></li>
+<li><p>Selling and displaying online (display) advertising involves many different actors and requires sophisticated technologies.
+Indeed, the online advertising industry is effectively a high-tech industry.</p></li>
+</ul>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="user-tracking-profiling-and-targeting-in-online-advertising.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -136,7 +278,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/ReneLaub/gdpr_impact/edit/master/02-tears.Rmd",
+"link": "https://github.com/ReneLaub/gdpr_impact/edit/master/02-Overview_Online_Advertising_Industry.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -144,7 +286,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/ReneLaub/gdpr_impact/blob/master/02-tears.Rmd",
+"link": "https://github.com/ReneLaub/gdpr_impact/blob/master/02-Overview_Online_Advertising_Industry.Rmd",
 "text": null
 },
 "download": null,

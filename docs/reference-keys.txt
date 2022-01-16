@@ -1,3 +1,7 @@
 introduction
 overview-of-the-online-advertising-industry
-user-tracking-profiling-and-targeting-in-online-advertising
+essential-actors-advertisers-publishers-and-users
+scope-and-types-of-online-advertising
+real-time-bidding-as-a-process-of-selling-online-advertising
+description-of-other-actors
+main-takeaways
