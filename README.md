@@ -1,4 +1,4 @@
-This repository contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written byBernd Skiera, Klaus Miller, Yuxi Jin, Lennar Kraft, René Laub and Julia Schmitt.
+This repository contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by Bernd Skiera, Klaus Miller, Yuxi Jin, Lennar Kraft, René Laub and Julia Schmitt.
 
 # What will you learn from this book? 
 
