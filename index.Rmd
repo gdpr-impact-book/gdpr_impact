@@ -5,11 +5,13 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Overview
+# Overview {.unnumbered}
 
 This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by Bernd Skiera, Klaus Miller, Yuxi Jin, Lennar Kraft, René Laub and Julia Schmitt.
 
-# What will you learn from this book?
+![](images/front_cover.jpg){width="209"}
+
+**What will you learn from this book?**
 
 -   Why and how the European General Data Protection Regulation (GDPR) impacts the online advertising market, particularly advertisers, publishers and users.
 
@@ -23,12 +25,10 @@ This website contains the online version of the book **"The Impact of the Genera
 
 -   Which developments are taking place with regard to personal data processing, among players in the online advertising industry, as well as among regulators and consumer protection agencies.
 
-# Who should read this book?
+**Who should read this book?**
 
 Anyone interested in learning how and why the online advertising industry benefits from using personal data, and how the GDPR impacts this practice.
 
-# Who wrote this book?
+**Who wrote this book?**
 
 The European Research Council provided Professor Skiera at Goethe University Frankfurt (Germany) with a substantial (ERC Advanced) research grant to examine the economic consequences of stronger restrictions on tracking technologies. Professor Skiera and his team pursued several empirical projects to demonstrate these consequences.
-
-![](images/front_cover.jpg){width="209"}
