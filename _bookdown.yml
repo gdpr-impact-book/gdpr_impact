@@ -5,4 +5,4 @@ edit: https://github.com/ReneLaub/gdpr_impact/edit/master/%s
 view: https://github.com/ReneLaub/gdpr_impact/blob/master/%s
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Section "
