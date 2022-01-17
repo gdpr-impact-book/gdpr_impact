@@ -4,335 +4,534 @@ editor_options:
     wrap: sentence
 ---
 
-# Personal Data Processing under the GDPR
+# Getting User Permission for Personal Data Processing via the Transparency and Consent Framework (TCF)
+
+In this section, we delve further into the practical challenges that firms in the advertising industry face in supplying a GDPR-compliant legal basis for their data processing activities.
+In particular, this section elaborates on the Transparency and Consent Framework (TCF), an industry initiative launched by IAB Europe for assisting firms in addressing the challenges for getting user permission.
+We note that, in practice, the process of ensuring the GDPR compliance is similar for the two legal bases that are applicable to the advertising industry, namely, (i) a user's explicit consent, or (ii) legitimate interest for processing data (see Section 4.5 for a detailed discussion of these legal bases).
+In both cases, the firm must get the user's permission for data processing, with the difference being that reliance on consent requires the user to opt-in to data processing, whereas reliance on legitimate interest requires the user not to opt-out.
+For convenience and for clarity of presentation, in what follows, we generally address consent and non-objection to legitimate interest simultaneously, using the term "permission" to refer to both of these concepts.
+
+## Challenges of Getting Permission
+
+To get a user's permission for personal data processing, a firm has to take the following three steps: (1) specifying the purposes of data processing for which permission is being provided (Section 4.4.4); (2) handling the permission---which includes both asking for permission and storing permission; and (3) checking the permission for data transfer, i.e., verifying that any transfer of data to other firms is carried out in accordance with the permissions that the user has provided.
+A firm faces challenges in each step.
+Table 8 provides an overview of the three steps, the actions that each step entails, and the corresponding challenges, which we discuss in detail in what follows.
+Note that in Table 8 and throughout this section, we use the term "vendors" to refer to other actors (see Section 2.4), in accordance with the terminology used by the TCF.
 
-## Aim and Scope of the GDPR
+![Table 8: Steps, Actions, and Challenges in Getting User Permission for Personal Data Processing towards Supplying a Legal Basis under the GDPR](images/table8.JPG "Table 8: Steps, Actions, and Challenges in Getting User Permission for Personal Data Processing towards Supplying a Legal Basis under the GDPR")
 
-The General Data Protection Regulation (GDPR) became effective in all member states of the European Union on May 25, 2018.
-The regulation aims to increase consumer privacy by (i) strengthening consumers' control over their personal data (see Section 4.2 for the GDPR's precise definition of personal data); and (ii) harmonizing EU member states' existing national privacy laws via one regulation for all EU member states.
-The GDPR achieves these aims both by defining users' rights with regard to their personal data (see Section 4.3) and by imposing obligations on firms that process such data (see Section 4.4).
-As elaborated in what follows, the GDPR defines the concept of personal data processing rather broadly---encompassing the collection of personal data, as well as the use and ultimate deletion of such data.
+### Challenges of Specifying Purposes for Permission
+
+Step 1 ("specifying purposes for permission") describes how a firm tries to comply with Article 5 para.
+1 point (b) of the GDPR: "Personal data shall be collected for specified, explicit and legitimate purposes." In other words, in this step, the firm must identify legitimate purposes for using the processed data and specify these purposes in a clear (explicit) manner.
+Moreover, according to Article 13 para.
+1 of the GDPR, a firm needs to communicate the specified purposes with its users.
+Notably, it must specify and communicate the purposes of data collection not only on its own behalf but also on behalf of all firms to which it transfers users' personal data, and it must also identify these firms (Article 13, para. 1, point e): "the data controller shall [inform the data subject about] the recipients or categories of recipients of the personal data, if any."
 
-Unlike previous EU privacy laws, which only affected European firms, the GDPR applies not only to EU firms but also to firms outside the EU that process EU citizens' personal data.
-The only case in which the GDPR treats European firms and non-European firms differently is with regard to the processing of personal data of non-EU citizens; in these cases, the GDPR applies to European firms but not to non-European firms, as outlined in Table 2.
+The GDPR itself does not define which "specified, explicit and legitimate purposes" are acceptable, leaving room for interpretation.
+Consequently, it is possible that ten different firms will come up with ten different ways to specify their purposes.
+For example, Firm A might specify and label two purposes: (1) cookies for payment information; (2) tracking users' behavior online.
+Meanwhile, Firm B might specify the same two purposes but label them differently from Firm A: (1) cookies to process payment; (2) cookies monitoring users online.
+If these two firms were to collaborate, the two different labels would make it challenging to match these two purposes automatically---though the purposes are effectively identical.
+In addition, the specifications can also differ substantially.
+Thus, the potential for heterogeneity in purpose specification makes communication to users and between firms challenging.
 
-![Table 2: Applicability of the GDPR for EU and non-EU Firms Processing Personal Data of EU and non-EU Citizens](images/table2.JPG "Applicability of the GDPR for EU and non-EU Firms Processing Personal Data of EU and non-EU Citizens")
+In light of the above, we suggest that firms face three major challenges in the step of specifying purposes for data processing activities (Table 8): namely, specifying purposes in a manner that is (1) accurate, (2) explicit, and (3) convenient to communicate with users and other firms.
 
-## Definition of Personal Data
+*Challenge 1: Accuracy.* In order to achieve accuracy, a firm must specify the purposes of data collection in a manner that is both GDPR-compliant and commonly accepted, thereby reducing the likelihood of misunderstanding.Achieving accuracy is challenging because the definitions and rules in the GDPR (Section 4) are abstract and open to interpretation.
+Indeed, there are disparities in interpreting the GDPR compliance among the Data Protection Authorities themselves.For example, the Data Protection Authorities of the UK and Spain require that analytic cookies get consent, while Germany disagrees, and France as well as Italy allows for several exceptions (Voisin et al. 2019).
+Hence, it is difficult for a firm to find a GDPR-compliant specification that is robust to all interpretations.
 
-The GDPR defines personal data as follows (Article 4):
+Another aspect that makes accuracy challenging is the possibility of heterogeneous specifications of similar purposes, as in our previous example of Firm A and Firm B. Suppose that Firm A transfers data to Firm B. In order for this transfer to take place, both firms must ensure that they have user permission for the two purposes specified by Firm B. Due to the different labels, Firm B may find it challenging to decide whether the purposes specified by Firm A accurately match its own specified purposes.
 
-*[...] any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.*
+*Challenge 2: Explicitness.* The GDPR requires that a firm's data collection activities be made explicit, i.e., fully transparent to the user.
+However, the GDPR does not indicate the exact information that firms must provide in order to achieve sufficient explicitness.Accordingly, firms face the challenge of identifying which information will provide users and other firms with a sense of explicitness.
 
-According to this definition, and in contrast to prior regulations, which only considered information that directly identifies a consumer (e.g., name, address, birth date, or social security number) as personal data, the GDPR considers personal data to include any information that directly or indirectly identifies a user (Bleier, Goldfarb, Tucker 2020).
-Information that can indirectly identify a user includes online identifiers such as cookies and digital fingerprints.
-Therefore, firms that adopt such tracking techniques have to comply with the GDPR.
+*Challenge 3: Convenient Communication.* Convenient communication entails using wording that reduces the chances of misunderstanding, while remaining concise and easily accessible to users and other firms.Again, because the GDPR does not specify which wordings should be used to describe the various purposes of data collection, it is challenging for a firm to identify the optimal wordings in this regard.
+In particular, firms may face a trade-off between using more words to achieve accuracy and making the text concise and accessible (Kulyk et al. 2020).
 
-The GDPR strictly differentiates between pseudonymous data, to which the GDPR applies, and anonymous data, to which the GDPR does not apply.
-Personal data are considered pseudonymous if they do not directly identify a user but can be used to identify a user indirectly.
-For example, a customer number (e.g., "123456789") does not, in itself, directly identify a user.
-However, when combined with information relating the customer number to an individual user (e.g., "123456789" represents user "X"), the customer number is considered pseudonymous data.
-Personal data are only considered anonymized if they do not identify a user at all (e.g., it is unknown which user the customer number "123456789" represents).
-Thus, firms that collect data from consumers and seek to avoid the GDPR cannot suffice with pseudonymizing user information but rather must anonymize it, which may be impractical and costly.
+### Challenges of Handling Permission
 
-## User Rights with Regard to Personal Data Processing
+As shown in Table 8, step 2 of getting permission ("handling permission") consists of two actions: asking for user permission and storing user permission.
+We note that Section 5 provides additional discussion of these actions alongside the costs that they might inflict on firms and on users, and Section 5 provides information on technological tools used to mitigate these costs.
 
-The GDPR provides users with eight rights related to the processing of their personal data.
-In what follows, and as summarized in Table 3, we classify these rights into three categories: rights that enable users to understand the processing of their personal data (Section 4.3.1); to change the processing of their personal data processing (Section 4.3.2), and to restrict the processing of their personal data (Section 4.3.3).
+*Action 1: Asking for Permission.* This action involves a publisher asking for the user's permission to have her data processed for the purposes that the publisher has specified.
+A publisher relies on a cookie banner to ask for the user's permission (Section 5).
+A user's positive response to the publisher's request implies that the publisher has obtained permission to process the user's personal data.
 
-![Table 3: Overview of User Rights and Their Aims under the GDPR](images/table%203-01.JPG "Overview of User Rights and Their Aims under the GDPR")
+As discussed in previous sections, asking for user permission can be challenging for a publisher because designing and running a cookie banner on web pages requires technical knowledge that some firms lack (Section 5.1.1.1).
+Moreover, a publisher must ask for permission on behalf of all the vendors to which it transfers user data for processing, as these vendors do not have direct access to the user.
+It may be challenging for a publisher to centralize its vendors' heterogeneous requests for permission, as different vendors may have different specifications for purposes (as discussed in Section 7.1.1).
 
-### Rights Enabling Users to Understand the Processing of Their Personal Data
+*Action 2: Storing Permission.* After asking a user for permission, the publisher must locally store information about the user's response---namely, whether the user has given permission for each specific purpose corresponding to each vendor.
+By storing this information, the publisher can avoid re-requesting the user's consent each time the user visits its website.
 
-The "Right to Information" states that a user has a claim to information about any firm that processes the user's personal data and about the firm's personal data--processing activities.
-Such information includes the contact details of the firm, which types of personal data the firm processes, and the rationale behind the processing.
-For example, if a user shops on an online platform, and the platform processes data from the user, then the user has the right to obtain contact details of the online platform.
-Moreover, the user has the right to know if the firm has collected data about the products the user viewed and is using this information to recommend other products to the user.
-This information puts the user in the position to contact the firm and enables the user to evaluate whether she agrees to the personal data processing.
+Storing permission can be challenging in two ways.
+First, the publisher has to find a way to encode and store the users' decisions in a small amount of space.
+Indeed, a user's granular decisions on permissions can form massive amounts of information.
+Publishers pass this information via HTTP requests throughout the chain of data transfer.
+Since there is a size limit for such requests, a publisher has to store permission information compactly.
 
-The "Right to Access" entitles users to obtain copies of their personal data and further information about the personal data processing.
-In our example, the user who shops on the online platform can ask for a copy of the personal data that the online platform has stored about her, and for information about all personal data processing activities.
-Notably, this right forces firms that process users' personal data to document all of their processing activities.
-The Right to Access enables users to gain an in-depth understanding of which personal data the firm processes for what purpose, providing additional information that can assist them in evaluating whether to consent to having their personal data processed.
+Second, it is challenging to store permission information in a way that enables vendors to access and read the information in a manner that is not excessively costly.
+Indeed, a vendor may incur high costs to access stored permission information, particularly when it transfers such information to other vendors.
+Recall that a vendor has to rely on a publisher to ask for permission on its behalf.
+Suppose Vendor A transfers data to Vendor B; Vendor A has to access the publisher's permission information to see whether Vendor B has received user permission.
+This process can become costly if Vendor A transfers data to many other vendors (Figure 5) and has to contact the publisher repeatedly.
+In addition, if a vendor works with multiple publishers that store information in different ways, it incurs costs associated with reading various storage formats.
 
-### Rights Enabling Users to Change the Processing of Their Personal Data
+Aside from the challenges outlined above, publishers face challenges in keeping stored permissions up to date.
+In effect, these challenges relate to the need to integrate the action of asking for permission with the action of storing permission.
+Suppose a user updates her permission settings and revokes permission that she granted in the past for a particular purpose.
+The publisher needs to update the permission information for each actor, and to ensure that all involved actors have the same, current information at the same point in time.
+To achieve this goal, it is necessary to integrate cookie banners with storage and data processing systems.
+Such integration poses both technical and legal challenges to firms.
+Specifically, a firm needs an information technology expert to execute the technical aspects of the integration, and it also needs a lawyer---one who is also comfortable with information technology---to verify that the procedure is compliant with the GDPR.
+Such interdisciplinary talents are rare and expensive to hire.
 
-The "Right to Rectification" provides a user with the opportunity to modify and correct potentially false or outdated personal data, which may harm the user otherwise.
-For example, in a situation in which a user's financial information was processed for the purpose of determining credit eligibility, it may be that the user was not solvent and, thus, not eligible for credit.
-However, once the user becomes solvent, the user may rectify the personal data about the insolvency, potentially preventing the information from harming future credit applications.
+### Challenges of Checking Permission for Data Transfer
 
-The "Right to Erasure" enables the user to force the firm that has processed the user's personal data to delete data that are not relevant for the purpose of the personal data processing.
-This right enables the user to negotiate with the firm about the relevance of personal data and puts the firm in the position to justify the personal data storage if the firm does not agree with the erasure.
-In our example, the user who became solvent may ask the firm to delete the past information about the user's insolvency because this personal data may not be relevant to assess the user's current solvency.
+Step 3 ("check permission for data transfer") describes the obligation for a firm that transfers data to other parties.
+Before Firm A (sender) transfers data to Firm B (receiver), Firm A has to identify Firm B's purposes for processing and verify that Firm B has permission to process the user's data for these purposes.
 
-The "Right to Data Portability" enables the user to ask the firm to provide all personal data of the user to another firm in an accessible and machine-readable format.
-For example, a user may ask her current bank to transmit all her personal data to a new bank.
-This right decreases lock-in effects caused by so-called switching costs.
-Switching costs occur if the user faces costs caused by switching from one firm's service to another firm.
+Carrying out this action is challenging.
+As discussed in Section 7.1.1, the GDPR offers firms the flexibility to specify their own purposes for data processing, and different firms may specify similar purposes in different ways.
+This diversity in specification increases the time and effort involved in the collaboration between firms.
+Furthermore, it may be challenging for both firms to argue that their purposes are indeed identical.
 
-### Rights Enabling Users to Restrict the Processing of Their Personal Data
+This challenge is further complicated by the specific roles fulfilled by the firms involved in the data transfer.
+For example, in a publisher-to-vendor data transfer, a publisher has to handle user permission on behalf of a vendor, and then check whether the permission it has obtained is indeed applicable to the purposes that the vendor has specified.
+This procedure, entailing multiple responsibilities imposed by the GDPR, is highly complicated.
+Similarly, in a vendor-to-vendor data transfer, the data-sending vendor always has to check with the publisher whether the data-receiving vendor has user permission.
+This process can entail substantial effort, particularly when the vendor collaborates with many other vendors, as illustrated in Figure 5.
 
-The "Right to Restriction of Processing" enables a user to stop the processing of her personal data (temporarily) if the user doubts (i) the necessity to use the personal data to fulfill the purpose of the processing, (ii) the accuracy of (some of) the personal data used to achieve the purpose of the processing, or (iii) the lawfulness of the processing.
-Therefore, this right enables the user to take actual control of her own personal data and requires the firm to justify (i) the necessity, (ii) the accuracy and (iii) the lawfulness of the personal data processing.
-For example, suppose a user applies for credit, and an algorithm decides, on the basis of the user's personal data, whether the user should receive the credit.
-If the user determines that the personal data used to make this decision are unnecessary, incorrect, or illegally processed, then the user can demand that the website stops processing the personal data.
+## Transparency and Consent Framework (TCF)
 
-The "Right to Avoid Automated Decision-Making" ensures that the user has the right not to be subjected to a decision based solely upon automated processing, including profiling.
-This right applies primarily to cases in which decisions significantly impact the user, such as the refusal of an online credit application.
-More specifically, this right enables the user to demand that the data-processing firm assign humans to monitor decision-making processes that are otherwise carried out automatically, as humans may better detect mistakes in such processes.
-For example, if a user's credit application is rejected on the basis of an automated decision, then the user can object to the automated decision-making process and request that the firm (partially) re-evaluate this decision via a human.
+On April 25, 2018, IAB Europe launched the TCF as a means of tackling the challenges discussed in Section 7.1.
+It launched an updated version of the TCF, TCF 2.0, in August 2019.
+The TCF is an industry initiative, aiming at providing a solution to get user permission with guidelines and tools.
+In order to adopt the solution, a firm has to register with IAB Europe, denoted as participating in TCF in the following sections.
+The TCF was formulated on the basis of extensive consultation with representatives from different fields in the online advertising industry---including technology vendors (Xandr), CMPs (OneTrust), and publishers (The Telegraph).
 
-The "Right to Object" entitles the user to object to the processing of personal data for marketing purposes, including marketing-related profiling.
-More specifically, this right enables users to ensure that they do not receive content or ads based on their past browsing behavior, demographics or interests.
-Therefore, this right enforces the user's fundamental right of informational self-determination.
-Returning to our example, suppose that the user who has applied for credit begins to receive advertisements based on the user's solvency rating.
-In this case, the user can object to this targeting strategy and can demand to see untargeted ads, which do not relate to the user's solvency rating.
-In order to override a user's objection to the processing of personal data, a firm must demonstrate compelling legitimate grounds for doing so.
+Specifically, the TCF aims to introduce a standard that - creates a standardized terminology of purposes shared by all participants; - provides tools to facilitate asking for permission (Global Vendor List) and storing permission (Transparency and Consent String); and - creates a procedure to check permissions for processing personal data before transferring user data between firms.
 
-## Obligations for Firms that Process Personal Data
+Note that each bullet point corresponds to one of the three steps described in the previous section, and summarized in Table 8: specifying purposes for permission, handling permission, and checking permission for data transfer.
 
-### The Role of the Firm: Data Controller or Data Processor
+In what follows, we provide a step-by-step explanation of how, in practice, a firm can use the TCF to execute each of the three steps and overcome the associated challenges.
+The TCF was envisioned as a well-documented and accepted standard that should help firms to comply with the GDPR.
+A Canadian initiative (www.iabcanada.com/transparency-and-consent-framework) builds upon the idea of the European initiative.
+Yet, the Irish Council for Civil Liberties suspects that the TCF infringes the GDPR.
+We will discuss their concerns in more detail in Section 9.4.2.
 
-According to the GDPR, a firm that handles a user's personal data is classified under one of two essential roles: "data controller" or "data processor".
-Each role entails specific responsibilities and obligations with regard to the processing of personal data---where a data controller has more obligations than a data processor.
-It is possible for a firm to be a data controller in some cases and a data processor in others, but never both simultaneously.
+## Mitigating Challenges in Specifying Purposes for Permission
 
-#### Definition of Data Controller
+### Facilitating Accuracy of Communication
 
-The GDPR defines in Article 4 point (7) that a firm is a data controller if the firm has the obligation of deciding why and how to process the personal data (the "purposes" and "means" of processing).
-Under the GDPR, the data controller faces several obligations, which we discuss in Section 4.4.2 and Section 4.4.3.
+#### Purposes
 
-#### Defintion of Data Processor
+As pointed out in Section 7.1.1, as the GDPR does not define precisely what a "specified, explicit and legitimate purpose" is, a firm may find it difficult to specify purposes that are GDPR-compliant under the interpretations of all parties, as well as to match its own purposes to those of other firms (in the case of data transfer between firms).
+To overcome these challenges, the TCF proposes ten specific purposes, which are shown in Table 9.
 
-The GDPR outlines in Article 4 point (8) that a firm is a data processor if it processes personal data on behalf of a data controller.
-Thus, the data processor cannot decide why and how to process the personal data (the "purposes" and "means" of processing).
-We discuss the obligations of the data processor in Section 4.4.2.
+![Table9: Specification of Purposes in the Transparency and Consent Framework (TCF) 2.0](images/table9.JPG "Specification of Purposes in the Transparency and Consent Framework (TCF) 2.0")
 
-#### Relationship Between Data Controller and Data Processor
+TCF uses the term "Purpose" to refer to each of the ten purposes specified in Table 9.
+To avoid confusion, throughout the remainder of this section, we refer to "Purpose" specified by the TCF as a "TCF purpose" and refer to a specific TCF purpose (e.g., Purpose 2) as "Purpose N" where "N" is an integer from 1 to 10.
 
-By definition, a firm cannot be both a data controller and a data processor for the same personal data processing activity; it must be one or the other.
-Yet, a firm might be involved in multiple personal data processing activities (potentially even involving similar data)---and serve as a data processor in some activities and as a data controller in others.
+Seven of the ten TCF purposes relate to either advertisement (Purposes 2, 3, 4, and 7) or content (Purposes 5, 6, and 8).
+Moreover, the purpose specification structures for advertisement and for content are similar.
 
-For example, suppose that a demand-side platform (DSP) D receives a bid request from an ad exchange to bid on behalf of an advertiser A1 for a particular ad slot.
-That bid request comes with personal data such as the user ID (or cookie ID) for the user who will be exposed to the ad, the publisher P1 to which the ad slot belongs, and the information that the user is likely to be male.
-Concerning this bidding process, DSP D is a data processor because it processes personal data on behalf of the data controller (i.e., publisher P1, which sells the ad slot).
+Notably, for Purposes 2--10, a firm can claim either consent or legitimate interest as the legal basis for data processing.
+For Purpose 1, however---which does not indicate a broader motivation for data processing but instead refers solely to the act of storing or accessing information on a device---a firm cannot claim legitimate interest and must obtain explicit consent.
+The motivation for including Purpose 1 in the list of TCF purposes is that it corresponds to the obligation of Article 5 (3) of the ePrivacy Directive (relevant for the "Planet49" decision of the European Court of Justice).
+Article 5 (3) emphasizes the importance of getting user consent for storing information.
 
-Assume further that DSP D also bids on behalf of another advertiser, advertiser A2, for an ad slot offered by a different publisher, P2.
-In this bidding process, advertiser A2 also receives personal data.
-DSP D remains a data processor for this bidding process because it processes personal data only on behalf of the data controller (i.e., publisher P2, which sells this ad slot).
+Purpose 1 is unique because data controllers cannot pursue Purpose 1 on its own but rather only in conjunction with another TCF purpose, which is an unavoidable logical outcome.
+For example, if Google wishes to display an ad to a user---whether personalized (Purpose 4) or non-personalized (Purpose 2)---it must obtain consent for Purpose 1.
+If the user denies consent for Purpose 1 but accepts consent for Purpose 4 and Purpose 2, Google will still drop the ad request and serve no ad, regardless of whether the ad is personalized or not (Roth 2020).
+The reason is that Google relies on cookies or mobile identifiers for both non-personalized ads (e.g., for frequency capping or fraud detection) and personalized ads (targeting).
+The example of Google further highlights the importance of Purpose 1.
+Note that data processors might still need Purpose 1 but not any of the other TCF purposes because they rely on the legal bases established by their data controllers.
+Moreover, data controllers may also declare one or more Purposes 2-10, without declaring Purpose 1 if they do not need access to the device.
 
-However, DSP D turns into a data controller if it combines the personal information received from publishers P1 and P2.
-For example, DSP D could develop profiles about users that contain information that both publishers provided to sell these profiles to advertisers.
-The profiles are now the firm's "own" data.
-Therefore, the firm becomes a data controller.
+With the help of the ten TCF purposes, all firms using TCF can communicate accurately with one another.
+For example, when a firm mentions Purpose 4, every other firm knows that the firm is referring to "selecting personalized ads."
 
-### Shared Obligations for Both the Data Controller and Data Processor
+We note that the specifications outlined in Table 9, corresponding to ten TCF purposes, reflect TCF 2.0, which launched in August 2019.
+TCF 1.0 (launched in April 2018) contained only five purposes.
+TCF 2.0 made the purposes more granular, in accordance with the WP259 guideline on consent (European Data Protection Board 2020).
+The guideline points out that granularity is an element of valid consent.
+This adjustment to conform to legal guidelines reflects that the TCF has been improving and revising its purpose specifications.
 
-The GDPR stipulates several obligations with which both types of actors---the data controller and the data processor---must comply in order to engage in a particular activity involving the processing of personal data.
-Table 4 outlines the most important ones.
+#### Special Purposes
 
-![Table 4: Overview of Obligations for both Data Controller and Data Processor under the GDPR](images/table4.JPG "Overview of Obligations for both Data Controller and Data Processor under the GDPR")
+In addition to the ten TCF purposes outlined above, the TCF specifies two Special Purposes, defined as purposes that firms must fulfill in order to technically be able to serve ads.
+Table 10 contains the two Special Purposes stipulated in TCF 2.0.
+Legitimate interest is the only legal basis that is applicable to these Special Purposes, and users cannot execute the "Right to Object" to these legitimate interests (Article 21, GDPR).
+The reasons are the following.
+Special Purpose 1 refers to a firm's legal responsibilities, so a firm must be allowed to pursue the purpose.
+Special Purpose 2 is technically necessary for delivering information over the network to an IP address.
+Although the "Right to Object" to Special Purposes is not technically supported by the TCF, publishers and their partner vendors can still establish some signaling mechanism to enable the execution of the "Right to Object".
 
-The first obligation---processing any personal data based on a legal basis---entails justifying the data processing activity by choosing an appropriate legal basis; the GDPR stipulates six arguments that constitute acceptable legal bases for personal data processing.
-The choice of a particular legal basis may be associated with additional requirements.
-Section 4.4.4 provides a detailed discussion of the various legal bases and the requirements associated with each one.
-While the data controller and data processor both need a legal basis, the choice of the legal basis is solely down to the controller.
-As such, the data processor relies on the legal basis chosen and established by the data controller.
+![Table 10: Specification of Special Purposes in the Transparency and Consent Framework (TCF) 2.0](images/table10-01.JPG "Table 10: Specification of Special Purposes in the Transparency and Consent Framework (TCF) 2.0")
 
-The second obligation is for the actor to document all steps taken as part of the personal data processing activity, including the choice of a legal basis and the measures implemented to ensure compliance with all obligations.
-Third, the actor needs to implement appropriate technical and organizational measures to safeguard privacy by default and design.
-Finally, in the case of a data breach, the data controller is usually required to notify the personal data breach to the supervisory authority within 72 hours.
-In contrast, the data processor is required to notify the personal data breach to the data controller immediately.
+### Facilitating Explicitness of Communication
 
-For example, suppose that a firm has a database of customer email addresses (i.e., personal data), and it wants to send a newsletter to its customers to inform them about a sales event.
-To this end, the firm must "process" the email addresses, e.g., by gathering relevant email addresses from the database and sending the newsletter to these addresses.
-According to Table 4, the firm first needs a legal basis for this activity.
-Suppose that the firm chooses to rely on users' explicit consent as its legal basis (see Section 4.4.4.2.2 for a detailed discussion of explicit consent as a legal basis for data processing).
-In that case, the firm has to collect users' explicit consent to have their email addresses used for receiving newsletters.
-Moreover, once the firm has chosen explicit consent as its legal basis, it needs to fulfill all associated requirements stipulated in the GDPR---e.g., informing the user of the purpose of personal data processing prior to requesting consent.
+#### Features
 
-Second, the firm needs to document all its activities with regard to the processing of users' email addresses.
-Notably, in line with the user's "Right to Access" (Section 4.3.1), if the user requests this documentation, the firm must provide it.
-Third, the firm must implement appropriate technical and organizational measures to safeguard personal data.
-For example, the firm could encrypt the files in the database to protect the email addresses from being stolen, or store more sensitive personal data about the users in a different database with pseudonymized email addresses.
-Fourth, the firm needs to inform the supervising authority in the case of a data breach.
+The TCF further specifies several Features.
+Features are not purposes in themselves.
+They are methods to process data related to one or more TCF purposes.
+Features are technically necessary to achieve certain TCF purposes; once the user has given permission for a particular TCF purpose, she does not need to provide additional permission for the associated Features.
+Note that a Feature is always linked to a TCF purpose and if there is no legal basis supporting that TCF purpose, the Feature has no meaning.
+Features require no legal basis, and information about them is provided to the user solely as a means of improving communication explicitness, that is, to provide the user with information about the methods that firms will apply to the user's data to achieve the approved (Special) Purposes.
+Table 11 contains the content of the Features.
 
-If the firm hires a digital marketing agency to promote its sales event, then the marketing agency acts as a data processor.
-As such, it relies on the legal basis, i.e., explicit consent, chosen and established by the firm.
-However, similarly to the firm, the marketing agency needs to document all personal data processing activities, implement appropriate technical and organizational measures to safeguard personal data, and inform the data controller in case of a data breach.
+![Table 11: Specification of Features in the Transparency and Consent Framework (TCF) 2.0](images/table11.JPG "Table 11: Specification of Features in the Transparency and Consent Framework (TCF) 2.0")
 
-### Obligations for Data Controller but not Data Processor
+#### Special Features
+
+Apart from Features, the TCF also contains Special Features.
+Special Features are similar to Features because firms may use them as a technical means of implementing one or more TCF purposes.
+However, Special Features are more privacy intrusive than Features are (e.g., precise geolocation), meaning that they relate to processing of data that may be more sensitive to a user.
+Therefore, a firm can only use the Special Features with consent as a legal basis.
+Table 12 shows the two Special Features.
+
+![Table 12: Specification of Special Features in the Transparency and Consent Framework (TCF) 2.0](images/table12.JPG "Table 12: Specification of Special Features in the Transparency and Consent Framework (TCF) 2.0")
+
+Figure 15 summarizes the differences in legal bases for Purposes, Special Purposes, Features, and Special Features in TCF.
+A green cell indicates that a particular legal basis (column) is applicable to a particular (Special) Purpose or (Special) Feature (row).
+In almost all cases in which a particular legal basis applies, the user has the right to make a decision, i.e., to provide/deny consent, or to accept/object to the legitimate interest.
+The only exception is for Special Purposes, which are grounded in the legal basis of legitimate interest, and to which the user cannot object.
+
+![Figure 15: Legal Bases for (Special) Purposes and (Special) Features in Transparency and Consent Framework (TCF) 2.0](images/figure15.JPG "Figure 15: Legal Bases for (Special) Purposes and (Special) Features in Transparency and Consent Framework (TCF) 2.0")
+
+### Facilitating Convenience of Communication with Stacks
+
+To provide firms with a simplified way to ask for permission, requiring users to make fewer decisions without sacrificing granular information or choices, TCF proposes Stacks---pre-defined groups of TCF purposes and/or Special Features.
+The TCF 2.0 Policy defines 42 Stacks that a publisher can choose to display on its cookie banner.
+Table 13 provides an example of a TCF Stack, labeled as Stack 2.
+If a publisher uses Stack 2, the publisher displays the name of the Stack "Basic ads and ad measurement" in the first layer of the User Interface (UI).
+The publisher usually displays the Stack description and corresponding TCF in a further layer, e.g., on a separate page.
+By choosing "Yes" for this Stack, a user simultaneously gives consent to Purpose 2 and to Purpose 7.
+As indicated by some DPAs (e.g., CNIL in France), displaying Stacks instead of TCF purposes improves the convenience of communication between the publisher and the user because the user has to make fewer decisions (just one instead of two decisions in the Stack 2 example).
+Nevertheless, the TCF still requires publishers to enable granular choices for each TCF purpose.
+Part of the convenience brought by the TCF might also be that users get progressively used to semi-standardized interfaces and standardized terminology so that they are increasingly efficient in making their choices over time.
+
+![Table 13: Example of a Stack in Transparency and Consent Framework (TCF) 2.0](images/table13.JPG "Table 13: Example of a Stack in Transparency and Consent Framework (TCF) 2.0")
+
+Note that different Stacks may contain overlapping TCF purposes.
+When selecting from the pool of 42 Stacks, a publisher cannot choose Stacks with the same TCF purpose.
+For example, Stack 2 contains Purposes 2 and 7; Stack 3 contains Purposes 2, 3, and 4.
+A publisher cannot include Stack 2 and Stack 3 simultaneously, as both Stacks include Purpose 2.
+If a publisher were to include both Stacks, it might obtain conflicting responses from users, e.g., if a user accepts Stack 2 but denies permission for Stack 3.
+For the same reason, a publisher cannot present a particular TCF purpose both as part of a Stack and outside of a Stack simultaneously.
+To sum up, the TCF assists firms in overcoming the challenges associated with specifying purposes for personal data processing.
+Specifically, it enhances (i) accuracy of specification---by providing a standardized, clearly defined, and granular set of (Special) Purposes; (ii) explicitness---by providing clear descriptions of (Special) Features that are technically necessary for the fulfillment of the specified Purposes; and (iii) convenience of communication---by creating groups of TCF purposes and/or Special Features, called Stacks, which are presented concisely and that enable users to make decisions on multiple TCF purposes simultaneously.
+Furthermore, the TCF is very clear about the applicable legal basis and possible user decisions for each scenario.
 
-The GDPR stipulates several obligations that apply to the data controller but not to the data processor.
-Table 5 outlines the most important ones.
+## Mitigating Challenges in Handling Permission
+
+The second step in getting permission for personal data processing is handling permission, via (1) asking for permission, and (2) storing permission.
+There are several challenges a firm faces in these actions (Table 8).
+The TCF provides tools to mitigate the challenges, which we will introduce in this section.
+
+### Facilitating Asking for Permission
 
-![Table 5: Overview of Obligations only for Data Controller and not for Data Processor](images/table5.JPG "Overview of Obligations only for Data Controller and not for Data Processor")
+#### Global Vendor List (GVL)
+
+The requirements that a firm must fulfill under the TCF in order to handle permission for data processing vary depending on whether the firm is a publisher (Section 2.1) or a vendor (Section 2.4).
+The critical difference between a publisher and a vendor in handling permission is that a publisher has direct contact with a user and asks for permission on its own, whereas a vendor has no direct contact with a user and needs to rely on a publisher to ask for user permission on the vendor's behalf.
+
+Section 7.1.2 points out that asking for permission is challenging.
+To obtain permission, a vendor must tell its partner publishers the purposes for which it requires such permission.
+As a publisher cooperates with many vendors, a publisher has to centralize all the vendors' requests for permission.
+The heterogeneity of vendors and their respective requests makes centralizing vendor permission challenging.
+Within the TCF, vendors disclose their required purposes uniformly via a registration process.
+The standardized registration process and the standardized purpose specification introduced in Section 7.3 simplify the challenge of centralizing vendor permission requests.
 
-These additional obligations include a requirement for the data controller to select the purposes of processing personal data before processing the personal data.
-Continuing our previous example, for the firm processing consumers' email addresses, the purpose of data processing might be "informing customers about a sales event".
-An additional obligation that the data controller must fulfill is to justify the relevance of all personal data that the data controller processes.
-In our example, the firm needs to be able to justify the relevance of processing the email addresses and any other personal data involved in this processing activity, such as names.
-If the firm is unable to justify the relevance, then the user might rely on the "Right to Erasure" to have the irrelevant personal data deleted.
-Regarding the firm's purpose to inform customers about a sales event, the firm might justify the processing of email addresses by referring to the requirement that the firm needs the customers' email addresses to send them emails about the sales event.
-A further obligation for the data controller is to ensure the compliance of the data processor with the GDPR.
-So, if the firm relies on a marketing agency to inform its customers about the sales event, the data controller needs to make sure, that the data processor fulfills all obligations of the GDPR regarding the specific personal data processing activities.
+To register with the TCF, a vendor must have a sufficient reputation (e.g., be a member in good standing with some industry associations) and pay an annual fee of 1500€.
+A vendor who registers with the TCF discloses which of the TCF-specified (Special) Purposes and (Special) Features (Table 9 - Table 12) it pursues.
+At the same time, the vendor also decides which legal basis to use for each of these (Special) Purposes and (Special) Features.
+When declaring legitimate interest as the legal basis in the GVL, vendors have to attest that they have carried out adequate Legitimate Interests Assessments (LIA) that operate a balancing between user and vendor interests.
+IAB Europe provides guidance on how to do this.
+
+After receiving the registration application of a vendor, IAB Europe verifies the vendor's identity and the vendor's ability to maintain its service while sticking to TCF regulations.
+Approved vendors appear on the Global Vendor List (GVL) (www.iabeurope.eu/vendor-list-tcf-v2-0).
+The GVL is a list of TCF-registered vendors and the respective (Special) Purposes and (Special) Features each vendor uses.
+The GVL is publicly available via its official website and updated weekly, enhancing each vendor's data processing transparency.
+
+Note that the verification process conducted by IAB Europe provides no warranty of GDPR compliance.
+In other words, the TCF does not certify that its approved vendors are entirely GDPR-compliant.
+
+From the GVL, a publisher knows what TCF purposes each vendor pursues, and with which legal basis.
+Then, a publisher chooses the vendors it intends to collaborate with from the GVL (hereafter referred to as partner vendors).
+By default, the purposes that each vendor pursues according to the GVL apply to all publishers.
+If a publisher prefers a legal basis for a specific TCF purpose that is different from the one specified by a particular vendor, the publisher can use Publisher Restrictions to modify the way they collaborate.
+For example, if a particular vendor uses legitimate interest for Purpose 3, a publisher can restrict the TCF purpose and require consent.
+In this way, a publisher and a vendor can collaborate more flexibly.
+
+If a vendor changes the (Special) Purposes and (Special) Features it uses, it needs to update its information provided to IAB Europe.
+These updates are included in the next weekly update of GVL.
+By being connected to the GVL, all publishers automatically have access to the most recent version available via their CMPs (which are also registered with the TCF; see Section 7.4.1.2).
+Yet, suppose the update requires more permissions, because of an additional (Special) Purposes and (Special) Features, an additional vendor, or a change of the legal basis from legitimate interest to consent.
+In that case, the publisher needs to ask all users again for their permission.
+
+To sum up, TCF's registration process and the GVL standardize how a vendor discloses its purposes to publishers.
+Furthermore, the process and the GVL provide an efficient means for publishers to centralize and manage permissions for their partner vendors.
+
+#### Consent Management Platforms (CMPs) Registered with the TCF
+
+To ask for user permission, a publisher needs to equip its website with a cookie banner.
+As a firm faces technical challenges in designing and running a cookie banner (Section 7.1.1), a publisher relies on a CMP (Section 6.1) that registers with the TCF to assist in designing and running a cookie banner.
+Like a vendor, a CMP also has to submit a registration application to the TCF and pay an annual fee of 1500€.
+IAB Europe verifies whether the technical operation of a CMP is compliant with TCF regulations.
+Again, passing the verification does not guarantee complete GDPR compliance for a CMP.
+If a publisher participates in the TCF, it must use a CMP from the publicly available list of TCF-registered CMPs.
+A publisher can use a commercial CMP service or register its own (private) CMP.
+As of November 2021, there are 170 registered CMPs in the TCF.
+53 (31%) of them are private CMPs.
+
+A TCF-registered CMP provides technical support to design and run a cookie banner.
+More importantly, only TCF-registered CMPs can create, update and store the Transparency and Consent String, a tool to store consent, which we will introduce in the following subsection.
+TCF-registered CMPs must follow the TCF guidelines.
+IAB Europe randomly audits CMPs for proper TCF implementation on publishers' websites and can admonish the CMP if violations occur.
+After three warnings, TCF can suspend a CMP, which means that all the publishers can no longer use the suspended CMP.
+Thus, IAB Europe creates a strong incentive for CMPs to ensure that the publishers correctly implement TCF when using their service.
+
+### Facilitating Storing Permission with Transparency and Consent String (TC String)
+
+Storing consent for a user is technically challenging for two reasons.
+First, there is a lot of information to store.
+For example, for each purpose of each vendor, a user can decide whether to provide permission for that purpose or not.
+Second, publishers have to store permission information in a manner that enables vendors to access and read the stored information easily.
+The TCF created the Transparency and Consent string (TC string) to cope with these two problems.
+
+The TC string is a piece of encoded character string capturing and storing all information about a user's permission decisions and other privacy preferences for a publisher.
+The TC string includes (1) (Special) Purposes and (Special) Features of each vendor cooperating with the publisher, (2) status of user permission (consent or non-objection to legitimate interest) to process data per purpose per vendor, (3) metadata and other restrictions (e.g., the time when the TC string was created).
+
+Only TCF-registered CMPs can create and update a TC string.
+All information in the TC string is encoded in a space-efficient manner so as to enable the TC string to be passed between firms via HTTP GET requests with a storage limit.
+All publishers within the TCF use TC strings to store consent.
+All publishers and vendors rely on the Application Programming Interface (API) of a TCF-registered CMP to decode and read TC strings.
+Thus, in effect, the TCF enables all firms to "speak the same language" when transmitting and reading information on user permissions (the TC string).
+
+### Integrating Asking for Permission and Storing Permission
+
+Combining cookie banners, information storage, and data processing in a harmonized way is challenging because it involves technical knowledge from many fields.
+The TCF attempts to provide a standardized procedure to integrate these different fields, relying on the components described in previous sections (e.g., TCF specification of purposes, TCF tools to facilitate asking for and storing permission).
+
+We describe this TCF procedure in detail with three representative cases summarized in Table 14.
+For these cases, we assume that one user visits a publisher five days in a row and once a day, and that consent is the legal basis for all pursued purposes.
+We arrange the cases from simple to complex in chronological order from Day 1 to Day 5.
+
+![Table 14: Overview of Cases of Asking for and Storing Consent under the Transparency and Consent Framework (TCF)](images/table14.JPG "Table 14: Overview of Cases of Asking for and Storing Consent under the Transparency and Consent Framework (TCF)")
+
+Case 1 is a simple example to help understand how a TC string works.
+A publisher asks a user for consent on its own behalf and stores consent for the user.
+Case 2 is a general case describing how a publisher asks for and stores consent on behalf of its partner vendor.
+Case 3 is a case explaining how actors affect each other when having different consent statuses.
+For example, a vendor may lose access to a user's data if its partner vendor does not have the user's consent.
+To make the examples more intuitive, we use figures visualizing how consent information is asked for and stored.
+
+#### Case 1: A Publisher Obtains Consent on its own Behalf
+
+Case 1 captures the most straightforward case of collecting and storing consent, visualized in Figure 16.
+Day 1 describes what happens on the user's first visit to a publisher's website, and Day 2 depicts the user's second visit.
+On Day 1, User X visits Publisher A for the first time.
+Publisher A has no partner vendor, so it only needs user consent for itself to pursue its specified TCF purposes---in our example, Purpose 6 (select personalized content) and Purpose 8 (measure content performance) (Table 9).
+
+![Figure 16: Process of Getting Consent under the Transparency and Consent Framework (TCF) for Case 1](images/figure16-01.JPG "Figure 16: Process of Getting Consent under the Transparency and Consent Framework (TCF) for Case 1")
+
+When User X arrives at the publisher's website (Step 1 in Figure 16), Publisher A contacts its CMP, CMP A, via a CMP tag, a JavaScript tag added to the website of Publisher A (Step 2).
+Then, the CMP code runs on the page and checks whether a TC string corresponding to Publisher A exists in User X's local storage (e.g., a first-party cookie) (Step 3).
+As this is User X's first visit to Publisher A, no such TC string is found.
+In such a case, CMP A shows a cookie banner on the website, e.g., as shown in Figure 10.
+The simplified cookie banner shown in Figure 16 (Step 4) lists out the two TCF purposes covered in our example: selecting personalized content and measuring content performance.
 
-### Obligations with Respect to Legal Bases
+Next (Step 5 in Figure 16), User X makes choices on the cookie banner for each purpose, a "No" for personalized content and a "Yes" for performance measurement.
+Then, CMP A creates a TC string for User X--Publisher A by encoding the consent information according to the standard (Step 6).
+Publisher A stores the TC string locally on the device of User X (Step 7).
+In Step 8, Publisher A relies on its CMP API to decode the TC string.
+Then, Publisher A knows which purpose User X allows it to pursue, which we visualize in the yellow box of "Privacy Preference Information" in the center.
+Eventually, Publisher A can measure content performance based on User X's data but cannot provide any personalized content to User X.
 
-As noted in Section 4.4.2, both the data controller and data processor are required to base the processing of personal data on a legal basis.
-Article 6 of the GDPR, "Lawfulness of processing", defines six possible legal bases for data processing, and a firm must be able to document the presence of one of these legal bases in order to be able to lawfully process personal data for a specific purpose.
-The applicability of each legal basis varies across industries.
-In what follows, we elaborate on each legal basis based on the legal definitions made within the GDPR, classifying them according to whether or not they are relevant for the advertising industry.
+On Day 2, User X visits the publisher for the second time.
+Steps 1-3 in Figure 16 remain unchanged.
+Assuming that User X has not deleted local storage since the previous visit, CMP A can detect the previously saved TC string and decode it for Publisher A. In other words, there is no need to show the cookie banner and go through Steps 4-7 again.
+As long as User X does not change consent information on the privacy policy page, Publisher A will rely on the stored consent information without re-obtaining permission.
+Overall, asking for and storing user consent in the simplest Case 1 is already a complicated procedure.
 
-#### Legal Bases not Relevant for Advertising
+#### Case 2: A Publisher Obtains Consent on Behalf of a Vendor
 
-##### Vital Interest
+Case 2, visualized in Figure 17, captures how a publisher asks for and stores consent on behalf of a vendor.
+Day 3 describes the first-visit example under the new assumptions, while Day 4 illustrates the second-visit example.
+On Day 3, Publisher A decides to offer ad slots on its website to monetize its content with ad revenue.
+Therefore, Publisher A chooses an ad tech vendor, Vendor S, from the GVL as its partner and notifies CMP A about this change.
+In this example, Vendor S is a Demand Side Platform (DSP) where a publisher lists its advertising inventory for advertisers to buy.
+Vendor S pursues two purposes with users' personal data: Purpose 2 (select basic ads) and Purpose 4 (select personalized ads) in Table 9.
 
-The legal basis of vital interest applies to processing activities that are necessary to "protect vital interests of the user or another natural person" (Art. 6 point (1d), GDPR).
-A vital interest exists if personal data processing aids in protecting a person's life (Recital 46, GDPR).
-In other words, this legal basis applies to processing activities necessary for matters of life and death, such as medical emergencies: If an individual has life-threatening injuries from an accident and medics admit her to a hospital, then the processing of the individual's personal data, e.g., to admit the patient to the hospital, is necessary to protect the individual's life.
-Due to its nature, the legal basis of vital interest does not apply to firms within the online advertisement industry.
-Indeed, online banner advertisements cannot convincingly be a matter of life and death.
+![Figure 17: Process of Asking for and Storing Consent under the Transparency and Consent Framework (TCF) for Case 2](images/figure17.JPG "Figure 17: Process of Asking for and Storing Consent under the Transparency and Consent Framework (TCF) for Case 2")
 
-##### Public Interest
+When User X visits Publisher A, the CMP tag code runs and checks whether a TC string with complete consent information exists.
+Although a TC string for Publisher A exists, the explicit consent is missing for Vendor S to process User X's data, as Vendor S has only recently been added.
+Thus, CMP A shows a new cookie banner to User X. The new cookie banner contains the TCF purposes for Vendor S and Publisher A. To make the illustration concise, we exclude the procedure of acquiring consent for Publisher A itself, which the Case 1 example has already described.
+User X sees Vendor S and its TCF purposes on the cookie banner and chooses a "Yes" for basic ad selection and a "No" for personalized ad selection.
+In Step 6, CMP A encodes the consent information into a new TC string for User X--Publisher A. Then, Publisher A saves the new TC string in the local storage of User X.
 
-Public interest serves as a legal basis for processing activities that are necessary to enable tasks that are of "public interest or in the exercise of official authority" (Art. 6 point (1e), GDPR).
-For example, a public interest may exist if the firm is a public authority.
-Another example might be the processing of personal data, e.g., the name and address of an individual, for national elections, as the processing serves the public.
+In Step 8, Publisher A signals Vendor S an ad call via a vendor tag.
+Before processing User X's data, Vendor S reads the TC string via the CMP API and knows that it can only use User X's data to select basic ads.
+Then, Vendor S serves basic ads to Publisher A for User X in Step 12.
+On Day 4, User X visits Publisher A once more.
+In this scenario, similar to the scenario described for Day 2 (for Case 1), if User X has not deleted the TC string in the local storage, Publisher A and Vendor S can rely on the previously saved permissions as given.
+In other words, no cookie banner pops up, saving Steps 4-7.
 
-Similarly to vital interest, public interest is unlikely to apply as an appropriate legal basis for firms within the online advertising industry.
-Unless firms are official authorities, online banner advertisements are unlikely to serve a public interest.
+#### Case 3: A Publisher Obtains Consent on Behalf of Multiple Vendors
 
-##### Legal Obligation
+Case 3, visualized in Figure 18, captures how a publisher asks for and stores consent on behalf of multiple vendors.
+Day 5 describes the first-visit example under the new assumptions.
+On Day 5, Publisher A starts to sell the ad slots via another ad tech vendor, Vendor P, an ad exchange.
+Thus, Vendor S (DSP) can now only buy ad slots via Vendor P (ad exchange).
+Both Vendor S and Vendor P use personal data to select basic (Purpose 2) ads and personalized ads (Purpose 4).
+Again, Publisher A informs CMP A about the recent addition of Vendor P and its TCF purposes.
 
-The legal basis of legal obligation applies if personal data processing is "necessary for compliance with a legal obligation" that binds a data controller or processor (Art. 6 point (1c), GDPR).
-An example of a processing activity based on a legal obligation is if a court processes personal data when inviting witnesses.
+![Figure 18: Process of Getting Consent under the Transparency and Consent Framework (TCF) for Case 3](images/figure18.JPG "Figure 18: Process of Getting Consent under the Transparency and Consent Framework (TCF) for Case 3")
 
-Due to its nature, the legal basis of legal obligation is unlikely to serve as the most appropriate legal basis for personal data processing within the online advertising industry.
+When User X visits Publisher A, Steps 1-3 occur again.
+As in the scenario described for Day 3 (Case 2), CMP A checks the local storage of User X and finds out that there are vendors and TCF purposes for which the user has not yet provided consent decisions.
+Therefore, CMP A shows a new cookie banner to User X with purposes and features for Publisher A, Vendor S, and Vendor P. We again neglect the procedures of asking for and storing consent for Publisher A itself for conciseness.
+Assume that User X ticks "Yes" for basic ad selection for Vendor S only, and "No" for the remaining TCF purposes, as displayed in the simplified banner in Figure 18.
+CMP A encodes the consent information into a new TC string, decoded and interpreted via the CMP API by Publisher A, Vendor S, and Vendor P.
 
-##### Contract Fulfillment
+When the vendor tag on the website runs in Step 8, Publisher A sends an ad call to Vendor P. However, Vendor P cannot use User X's data for either of the TCF purposes.
+Consequently, Vendor S has no access to the data, even though it has user consent for basic ad selection.
+The dashed grey arrow in Step 12 captures the loss of access to user data.
+This situation implies that, in Step 14, Vendor S can no longer show a basic ad that, according to the user's permission decisions, it would otherwise have been able to show for User X.
 
-The legal basis of contract fulfillment applies if a data controller or processor has to process personal data in order to enable a user to enter into or complete a contract (Art. 6 point (1b), GDPR).
-Such a legal basis might be applicable, for example, to a retailer selling clothes online: To complete a transaction---i.e., enter into a contract with the retailer---the user needs to provide personal data such as a name, shipping address, and credit card information.
-Without the processing of such information, the contract between the two parties (provision of clothing in exchange for payment) cannot be fulfilled.
+#### Example Procedures: Concluding Remarks
 
-Data controllers may claim the legal basis of contract fulfillment when setting so-called "strictly necessary" cookies on their websites.
-Strictly necessary cookies, also called technically necessary cookies, are essential for a website to function and for the user to use the website's features.
-Such cookies include, for example, those that enable websites to process payment information or to save items placed in a shopping cart.
+To keep our example simple and concise, we illustrated the elementary cases of a publisher obtaining consent only on its own behalf, for one vendor, or for two vendors.
+Even with our simplified focus, the procedures described were quite complex---Cases 2 and 3 even more so than Case 1.
+In reality, the complex interplay between publishers and vendors requires the technical solutions for these cases to be even more sophisticated than outlined.
+The TCF assists in mitigating this complexity by providing actors in the online advertising industry with clear procedures for integrating permission requests and permission storage.
 
-Although contract fulfillment can be an applicable legal basis for using (strictly necessary) cookies, it currently does not serve as a legal basis for personal data processing for the purpose of online advertising.
-More specifically, cookies used for online advertising cannot be categorized as strictly necessary.
-Thus, contract fulfillment currently cannot serve as a legal basis for firms in the advertising industry.
-With the rise of the PUR model (see Section 5.2.2.2), however, contract fulfillment might play a more important role.
+Nevertheless, the current TCF procedure cannot take care of every connection in the complex interplay.
+For example, it is not strictly supervised whether vendors delete the received personal data when a user withdraws her consent or when she wants to have her personal data deleted.
 
-#### Legal Bases Relevant for Advertising
+## Mitigating Challenges in Checking Permission for Data Transfer
 
-##### Legitimate Interest
+The third step of getting permission for personal data processing is checking permission for data transfer, i.e., ensuring that data-sending and data-receiving firms have permission for identical purposes for transferring personal data---and that the permissions for each purpose correspond to identical legal bases (i.e., consent or legitimate interest).
+This procedure of matching purpose specifications and legal bases can be technically challenging.
+TCF attempts to mitigate these challenges by providing standardized checking and matching procedures, which we will introduce in what follows.
 
-Firms can apply the legal basis of legitimate interest if the personal data processing is "necessary for the legitimate interest pursued by a data controller or a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the [user]" (Art. 6 point (1f), GDPR).
-To be able to claim this legal basis, a data controller must provide documentation on a case-by-case basis showing that its own legitimate interests in processing a user's data outweigh the user's interests in not having the data processed.
+### Facilitating Checking Permission for Publishers
 
-If a firm uses the legitimate interest claim as a legal basis for carrying out personal data processing activities, the firm needs to be transparent about the personal data processing activities and further inform the user that and how they can object to these activities (Art. 21, GDPR).
-Therefore, loosely speaking, legitimate interest represents the opt-out approach of personal data processing: If the user does not opt-out of personal data processing based on legitimate interest, data controllers can process personal data.
+In this section, we discuss the case where a publisher transfers data to other vendors.
+Recall that a vendor within the TCF discloses, through the GVL, which of the (Special) Purposes and (Special) Features (Table 9 - Table 12) it uses.
+A vendor also decides which legal basis to use to support each purpose it pursues.
+A vendor can only support Purpose 1 with consent.
+To support Purposes 2-10 (Table 9), a vendor has three options: (1) use only consent, (2) use only legitimate interest, (3) use either consent or legitimate interest.
+For the purposes supported by either consent or legitimate interest, a vendor sets a default legal basis.
+Then, it is the partner publisher who decides which legal basis to use for the vendor.
+Note that a firm can only use one legal basis to support one purpose.
 
-A firm may make the argument that data processing for marketing activities serves a legitimate interest.
-For a publisher, for example, collecting and using personal data can enable behaviorally targeted ads to be served to users, thereby generating revenues for the publisher (which, in turn, may offer its content for free to users---suggesting that the user's interests are not harmed).
-At the same time, if a user might not reasonably expect personal data processing, it is harder for a firm to argue that a legitimate interest to process the personal data exists.
+More formally, for each purpose (Table 9) except for Purpose 1, a vendor has five options:
 
-Thus, legitimate interest may be a legal basis that firms can use to justify the processing of users' personal data.
-However, the Data Protection Authority responsible for a firm has to decide upon its applicability on a case-by-case basis.
-Yet, the applicability for the legal basis of legitimate interest for tracking activities will likely be limited in certain countries.
-For example, Germany eliminated the possibility to use legitimate interest for online tracking technologies with the Telecommunications and Telemedia Data Protection Act (TTDSG) that entered into force in December 2021.
+-   Pursue the purpose and support with only consent as the legal basis.
 
-##### Consent
+-   Pursue the purpose and support with only legitimate interest as the legal basis.
 
-The GDPR regulates the legal basis of consent in Article 6 point (1a) and in Article 7.
-A user may give consent for "one or more specific purposes" of personal data processing activities.
-Valid consent under the GDPR stipulates a privacy-preserving default, the opt-in approach, that we call "explicit consent".
-This opt-in approach stipulates that without action by the user, the user does not give consent.
-Additionally, consent needs to be:
+-   Pursue the purpose and support with legitimate interest by default, but consent also feasible as the legal basis.
 
--   **Freely given:** The user should not be or feel persuaded to give her consent.
-    The consent must be given voluntarily, i.e., offering a real choice to the user.
-    Above all, access to content or a data controller's offering must not be conditional on consent.
-    Yet, there have been some cases in which DPAs allow the access to content being conditional on consent.
-    Such a case would be the presence of an equivalent paid alternative (as, e.g., the Austrian DPA ruled in 2019, Datenschutzbehörde 2019).
+-   Pursue the purpose and support with consent by default, but legitimate interest also feasible as the legal basis.
 
--   **Specific:** The user has to give consent for specific purposes and third parties.
+-   Do not pursue the purpose.
 
--   **Informed:** Before giving consent, a user needs to have access to information about the personal data processing and to be able to understand what the user is consenting to.
-    This information should include the nature of personal data processed, the purposes of the personal data processing, who will have access to the data, and how the data controller safeguards the data.
+Table 15 provides an example of the legal bases for the pursued TCF purposes of a specific vendor (Emerse Sverige AB), who pursues Purposes 1--9 and does not pursue Purpose 10.
+The vendor uses only consent to support Purpose 1, Purpose 3, and Purpose 4.
+The vendor uses only legitimate interest to support Purpose 7 and Purpose 8.
+The vendor uses either consent or legitimate interest to support Purpose 2 and Purpose 9, and in both cases the default legal basis is legitimate interest.
 
--   **Unambiguous:** There must be no doubt whether a user has consented and to what a user has consented.
+![Legal Bases for Purposes under TCF Specification of an Example Vendor (here: Emerse Sverige AB)](images/table15.JPG "Legal Bases for Purposes under TCF Specification of an Example Vendor (here: Emerse Sverige AB)")
 
--   **Made with a clear affirmative action:** The user has to actively and explicitly give her consent.
-    Without action by a user, the data controller cannot obtain consent.
+A publisher has three options for the vendor for each purpose:
 
-Furthermore, after a user has given consent for a specific personal data processing activity, the user has the right to revoke the consent.
-It must be as easy for the user to revoke her consent as it is to provide consent.
-The user must be able to withdraw previously given consent at any point in time.
-If a firm fulfills all of these requirements, it has obtained the user's valid consent.
+-   Desire the vendor to pursue the purpose and support with consent as the legal basis.
 
-An example of valid consent under the GDPR would be this scenario: A data controller informs the user about the personal data processing, the purposes of that personal data processing, and the third parties that will have access to the data.
-After viewing this explanation, the user can tick several un-ticked boxes for each purpose of the personal data processing separately.
-The data controller informs the user that and how she can withdraw consent at any time.
-A user can access the service even if she denies consent.
+-   Desire the vendor to pursue the purpose and support with legitimate interest as the legal basis.
 
-To summarize, consent is a legal basis that firms within the online advertising industry can use for personal data processing.
-Under the GDPR, consent is contingent on an opt-in approach.
-This approach likely makes personal data processing transparent to the user.
+-   Desire the vendor not to pursue the purpose.
 
-## Specific Conditions Regarding Legal Bases for User Tracking Technologies
+Given that a publisher has requested permission for data processing on the vendor's behalf for a particular purpose, there are four options for the decision that a user can make:
 
-As the GDPR affects all processing activities that enable individuals to be identified, the tracking technologies discussed in previous sections---including login data, digital fingerprinting, and cookies---are all within the scope of the GDPR.
-As such, these technologies should presumably be subject to the conditions outlined above regarding the applicability of the various legal bases.
-Yet, recent state court decisions have imposed additional restrictions with regard to the use of tracking technologies in the advertising industry specifically.
-In particular, the applicability of legitimate interest as a legal basis---one of the two legal bases that are relevant for the advertising industry (the other is consent; see Section 4.4.4.2)---has been limited with regard to tracking technologies that serve advertising purposes.
-For example, in May 2020, the German Federal Court of Justice reinforced the Planet49 ruling by the European Court of Justice of October 2019, which effectively limits the use of legitimate interest as a legal basis for tracking technologies, instead requiring that data controllers and processors obtain valid consent (Information Commissioner's Office 2019).
+In cases in which consent serves as the legal basis:
 
-The EU tried to mitigate uncertainties about the applicability of legal bases and the practical implementation of the GDPR's requirements for the digital world by drafting another regulation, the ePrivacy Regulation, which we discuss in Section 9.3.3.
-This regulation intends to extend but not replace the GDPR's requirements in online settings.
-In particular, it should regulate questions and uncertainties regarding online marketing.
-However, this regulation has no finalized draft as of June 2021.
-Consequently, it is currently difficult to claim legitimate interest as a legal basis for user tracking in online advertising.
-This situation might change once the ePrivacy Regulation is finalized---though this is not very likely.
+-   Give consent to process data for the purpose (accept consent).
 
-## Legal Bases for Tracking under other Privacy Laws
+-   Do not give consent to process data for the purpose (deny consent).
 
-Though this chapter focuses on the EU's GDPR, it is important to acknowledge the numerous other privacy laws worldwide that handle various aspects of privacy---in some cases, similarly to the GDPR, and in others, slightly differently.
-In Table 6, we compare some of these laws---specifically, with regard to their handling of legal bases for the processing of personal data in general, and for the use of tracking technologies in the online advertising industry specifically.
+In cases in which legitimate interest serves as the legal basis:
 
-Table 6 shows that most major privacy laws worldwide require the same legal bases for tracking that the GDPR requires.
-Some privacy laws even allow for legal bases other than those allowed by the GDPR (Brazil's LGPD, India's PDPB, China's PIPL).
-Moreover, most privacy laws (LGPD, PDPB, PIPL, and Thailand's PDPA, in addition to the GDPR) entail similar criteria for valid consent---namely, users must provide consent explicitly (an opt-in approach), in a free, specific, informed, and unambiguous manner (see Section 4.4.4.2.2).
-Thus, any firm worldwide that caters to users based in the EU, Brazil, India, China, or Thailand must comply with these requirements for consent.
-California's Consumer Privacy Act (CCPA) is the only major privacy law that stipulates an opt-out approach to consent, i.e., users' consent is assumed unless they actively object to personal data processing activities.
+-   Accept legitimate interest to process data for the purpose (accept legitimate interest).
 
-The various countries also differ in terms of the penalties they impose for infringement of privacy laws.
-A firm that infringes on the GDPR can be required to pay a fine of up to 4% of its global annual turnover or €20 million, whichever amount is higher.
-Under the LGPD, fines can reach up to 2% of a firm's global annual turnover.
-The PDPA and CCPA, in turn, specify flat sums at which firms can be fined: up to 5 million Thai Baht (\$150,000) for the PDPA and up to \$7,500 for the CCPA.
-For grave violation against the PIPL, a firm must pay a fine of up to 5% of its annual turnover or 50 million Yuan (around \$8 million).
-Moreover, the directly responsible person in charge can be fined under PIPL between 10 thousand and 1 million Yuan (\$1,600 to \$160,000).
-So, China's privacy law (PIPL) is roughly as strict as the GDPR in terms of fines, the legal bases and the requirement of consent from the user to use their personal data.
+-   Execute the "Right to Object" to legitimate interest to process data for the purpose (deny legitimate interest).
 
-![Table 6: Comparison of Legal Bases for Tracking in Major Privacy Laws Worldwide](images/table6.JPG "Table 6: Comparison of Legal Bases for Tracking in Major Privacy Laws Worldwide")
+Thus, given that a publisher has a relationship with a vendor (i.e., intends to transfer user data to the vendor in accordance with TCF procedures), and given a particular TCF purpose, various outcomes can be obtained with regard to data transfer for that purpose.
+The outcome depends on the combination of (1) the option selected by the vendor, (2) the option selected by the publisher, and (3) the user's decision, given the option selected by the publisher.
+In particular, seven outcomes are possible (see Figure 19); we classify these outcomes into "Deal" and "No Deal." "Deal" means that a user's personal data are ultimately transferred for processing, while "No Deal" means that neither data transfer nor data processing takes place.
+
+The seven outcomes are as follows:
+
+-   Deal to transfer data upon consent.
+
+-   Deal to transfer data upon legitimate interest.
+
+-   No deal due to mismatched legal basis.
+    • No deal due to mismatched pursuit status.
+
+-   No deal due to no pursuit.
+
+-   No deal due to no user consent.
+
+-   No deal due to user's objection to legitimate interest.
+
+![Figure 19: Outcomes of Actions from a Publisher, a Vendor, and a User When a Publisher Transfers Data to a Vendor](images/figure19.JPG "Outcomes of Actions from a Publisher, a Vendor, and a User When a Publisher Transfers Data to a Vendor")
+
+In Figure 19, the cells in green represent a successful deal to transfer data from a publisher to a vendor for one of the purposes.
+The cells in red denote a failed deal to transfer data because the user does not give permission.
+The white cells represent no deal to transfer data because of a mismatch in the legal basis between what the publisher expects and what the vendor supports for the purpose.
+The cells in grey denote no deal to transfer data because either the publisher or the vendor, or both of them, do not pursue that purpose.
+
+Overall, the TCF's standardized matching and checking procedure helps to ensure that a legal basis exists for a specified, explicit and legitimate purpose wherever data flows.
+
+### Facilitating Checking Permission for Data Transfer Between Vendors
+
+In this section, we discuss the case where a vendor transfers data to another vendor.
+Checking the permission to process and transfer data is more straightforward for a vendor-to-vendor case than a publisher-to-vendor case.
+A vendor cannot use restrictions to adjust the legal basis for another vendor but only accepts whatever is disclosed in the GVL and stored in the TC string.
+Hence, a vendor can be in one of three states: (1) has user permission to process and transfer data (accept consent or accept legitimate interest), (2) does not have user permission to process and transfer data (deny consent or deny legitimate interest), or (3) does not pursue the purpose.
+
+![Figure 20: Outcomes of States of Two Vendors When a Vendor Transfers Data to another Vendor](images/figure20-02.JPG "Figure 20: Outcomes of States of Two Vendors When a Vendor Transfers Data to another Vendor")
+
+Figure 20 summarizes the outcomes of data transfer between vendors.
+A vendor can only transfer personal data to another vendor if both vendors have the user's permissions, captured by the green cell.
+The cells in red depict a failed deal to transfer data because at least one of the vendors lacks user permission to process data for the purpose.
+The cells in grey represent no deal as at least one of the vendors does not pursue the purpose with user data.
 
 ## Main Takeaways
 
-The main takeaways from Section 4 are:
+The main takeaways from Section 7 are:
 
--   The GDPR is a privacy law of the European Union applicable to all European firms and all firms processing personal data of European citizens.
+-   A firm goes through three steps when getting permission for data processing, in order to supply a legal basis: (1) specifying purposes for data processing, (2) asking for and storing permission for the specified purposes, (3) checking permission for data transfer.
 
--   The GDPR aims to give users more control over their personal data by defining user rights to understand, change, and restrict the personal data processing.
+-   The online advertising industry faces challenges for each of the three steps involved in getting permission for processing of personal data.
 
--   The GDPR increases responsibilities for all actors who process personal data.
-    For a given data-processing activity, the GDPR defines an actor as either a data processor or a data controller, where data controllers have more obligations than data processors do.
-    Data controllers are also responsible for the legal compliance of the cooperating data processors.
+-   The TCF is an industry initiative launched by IAB Europe, intending to tackle the challenges involved in getting permission for data processing by building up a standard for all participants to follow.
 
--   The GDPR stipulates that in order to process personal data, a firm must specify a legal basis for personal data processing.
-    For firms in the advertising industry, the two applicable legal bases are legitimate interest and consent.
+-   TCF creates a uniform specification of purposes for data processing, shared by all participants, to prevent misunderstanding and help firms communicate conveniently with users and other firms.
 
--   Loosely speaking, legitimate interest represents the opt-out approach for getting permission for personal data processing, whereas consent represents an opt-in approach.
+-   The TCF provides a Global Vendor List (GVL) to help vendors disclose their purposes, and publishers centralize and manage permission on behalf of their partner vendors.
 
--   Even though the GDPR identifies both consent and legitimate interest as applicable legal bases for firms in the advertising industry, courts have reduced the applicability of legitimate interest, consequently favoring consent.
+-   The TCF created the Transparency Consent string (TC string) to store, update and exchange a user's permission in a standardized way.
+
+-   The TCF provides no warranty for the GDPR compliance.
+    Moreover, even with the help of the TCF, the procedure to handle and check permission remains complicated.
