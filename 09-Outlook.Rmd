@@ -1,0 +1,240 @@
+---
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# Outlook on Further Developments
+
+The GDPR has inspired firms to change their operations in other ways beyond those discussed in previous sections.
+Some of these activities aim to decrease personal data processing (Section 9.1), whereas others aim to increase it (Section 9.2).
+
+## Activities that Aim to Decrease the Processing of Personal Data
+
+Firms take several avenues to decrease the processing of personal data, some building upon privacy laws and some going beyond existing regulations.
+These activities might result from different motivations.
+On the one hand, a firm might decrease personal data processing to fulfill user preferences for higher consumer privacy.
+On the other hand, the firm might be motivated by the competitive effect and aims to strengthen its market position relative to its competitors by being more privacy-focused.
+
+One action that firms have taken and are taking is changing the default settings they offer users in privacy decisions.
+An increasing number of web browsers and devices did so.
+So, instead of merely offering the option to block tracking if a user prefers this configuration, they have started to block tracking technologies such as third-party cookies by default.
+For example, Safari started to block certain third-party cookies in 2017 and to completely block tracking in 2020, and Firefox has blocked third-party cookies since 2019.
+Chrome has also announced that it will begin to block third-party cookies from 2023 on.
+Additionally, device manufacturers have started to adjust the default settings for mobile phones.
+For example, the firm Volla created a smartphone that, by default, blocks any tracking of the user and builds upon an operating system independent of Google and its operating system, Android, or other players.
+
+Apple introduced the App Tracking Transparency framework (ATT) with the 14.5 iOS update in April 2021.
+Essentially, ATT requires app developers to ask users for consent if they want to track consumers.
+The app developers request consent via a so-called "ATT prompt", similar to cookie banners on websites, and need to outline the purpose of tracking.
+The developer can decide when to ask the user for consent but cannot access the user's identifier before receiving the user's consent.
+
+However, one significant difference between the GDPR and Apple's privacy activities is the regional scope.
+While the GDPR is limited to EU firms and all other firms that cater to EU users, Apple''s privacy activities apply globally to all Apple users.
+In certain parts of the world, Apple's privacy activities, particularly the consent requirement, are stricter than local privacy laws, such as in California, where the local privacy law (CCPA) only requires an opt-out possibility.
+Thus, private firms such as Apple implicitly introduce privacy regulations.
+
+Google's privacy sandbox aims at decreasing the processing of personal data while maintaining the value of the information derived from users' browsing behavior.
+The privacy sandbox introduced several approaches, including the (i) "Federated Learning of Cohorts" (FLoC) for targeting specific groups of users, and (ii) "Two uncorrelated requests, then locally executed decisions on victory (and an e)" (Turtledove) specifically for retargeting.
+Both approaches aim to keep the tracking, profiling, and targeting of a user in the user's browser.
+Therefore, fewer user data move outside the browser towards third parties, instead of remaining close to the user, namely in the user's browser.
+Moreover, these approaches likely increase the reach of Google ads remarkably because Google might show ads to all Chrome users on every website.
+
+FLoC represents an approach in which Google classifies Chrome users into large groups according to their past browsing behavior.
+Advertisers then receive information about these groups and no longer about individual users.
+Consequently, they can only target groups of individuals and not individuals.
+However, privacy advocates have raised concerns that this approach might actually increase user tracking because Google could group users based on their entire browsing behavior.
+In addition, some publishers have already announced intentions to block FLoC (e.g., WordPress, Amazon), partly because Google could use its browser to track users on websites that are unrelated to its business.
+Thus, Google might not continue to pursue FLoC but propose alternatives instead.
+
+Turtledove represents a new and more privacy-compliant approach in which advertisers can retarget users but do not get access to personal data.
+This approach uses two kinds of information: (i) about advertisers stored in the user's browser (e.g., a user visited the advertiser's online store some time ago) and (ii) about the website a user is currently visiting.
+Then, the browser conducts an auction and requests that advertisers place two bids: one for the first kind of information (i) and one for the second kind (ii).
+Those two requests are independent of each other from the advertisers' perspective.
+The advertiser with the highest bid across both requests wins the auction.
+The most recent version of Turtledove is "First Locally-Executed Decision over Groups Experiment" (FLEDGE), which includes industry suggestions, such as incorporating a trusted server to store information about a campaign's bids and budgets.
+
+Microsoft proposes with "Private and Anonymized Requests for Ads that Keep Efficacy and Enhance Transparency" (PARAKEET) an alternative to Google's privacy sandbox.
+It also uses a trusted server but builds upon differential privacy to anonymize personal data.
+More specifically, the proposal aims to decrease the accuracy of users' personal data to protect their privacy without decreasing the data's value severely.
+
+The activities mentioned above aim to decrease the processing of personal data.
+These activities likely reduce the number of tracked users and the amount of data available to firms in the online advertising industry.
+As a result, advertisers' targeting ability might diminish, leading ad prices to decrease, along with publishers' revenue.
+
+## Activities that Aim to Increase the Processing of Personal Data
+
+The limitations imposed by the GDPR have also motivated firms to identify means of increasing the processing of personal data, using monetary and non-monetary incentives.
+Most importantly, publishers have started to implement so-called "cookie paywalls."
+
+Essentially, cookie paywalls allow users access to the publisher's content either if (i) the user provides permission for their personal data to be processed for online advertising purposes (which often includes profiling and targeting), or if (ii) the user pays a subscription fee to the publisher.
+Often, this subscription fee to avoid tracking also includes an advertising-free subscription.
+In Germany and Austria, some publishers (e.g., Spiegel, Zeit, Standard) refer to cookie paywalls as the "PUR Model" (i.e., "purity model", see Section 5.2.2.2).
+In addition to individual publisher solutions to implement such a "Pur Model", there also exist solutions that aim at bundling publishers so that the user pays a subscription fee for a set of publishers together (e.g., contentpass from Germany).
+
+Cookie paywalls introduce a new barrier to accessing content free of (monetary) charge and constitute a trade-off between the user being tracked, profiled and targeted, or paying for the publisher's content.
+This approach might lead to unequal treatment of users visiting a publisher's website.
+A user with lower income may be more likely to wish to avoid paying money for the publisher's content and thus to either pay with data or move to a different publisher, which may offer content of lower quality.
+
+Another initiative that firms have adopted is providing the user with a monetary incentive to allow user tracking.
+For example, the firm Gener8 implemented a browser that offers users a choice between two options.
+The first option for users is to block tracking while also indicating their preferences for certain topics (on an optional basis); this option enables users to enjoy a tracking-free experience while still providing adequate targeting opportunities for advertisers.
+The second option for users is to allow tracking but to earn points for allowing it.
+Users can then redeem these points to get discounts, free trials and even free products from cooperating firms.
+
+Such an initiative is beneficial for users and firms alike: Users can choose their preferred way of browsing---tracking-free or with tracking---and get compensated for allowing tracking if they choose to do so.
+Furthermore, even if users decide to block tracking, advertisers are still able to target users, based on their explicitly reported preferences.
+
+Another initiative for increasing user tracking is netID, developed by the European netID Foundation, a foundation created by an alliance of publishers.
+Currently, more than 100 publishers implement netID, aiming to decrease the number of user accounts and login credentials per user and replace them with one account.
+The basic premise of netID is that it provides a user with a single account that can be used to access different publishers, and the user manages all permission decisions within that netID account.
+This centralization is likely to reduce the decision costs that users face when providing and managing permission for data processing.
+Therefore, in effect, netID provides non-monetary incentives to use netID.
+
+The activities mentioned above aim to increase the processing of personal data.
+Therefore, they likely enable advertisers to target advertisements better, increasing the respective ad prices, potentially enabling publishers to gain more revenue from ad sales and to improve the quality of their content.
+
+## Outlook on Further Regulatory Activities
+
+The introduction of the GDPR sparked several additional regulatory initiatives that warrant discussion, including the following: (i) the Digital Services Act, (ii) the Digital Markets Act, (iii) the ePrivacy Regulation, and (iv) the Tracking-Free Ads Coalition.
+Moreover, the introduction of the GDPR as a European standard might lead to (v) deviations in terms of its interpretation and enforcement.
+
+### Digital Services Act
+
+The Digital Services Act (DSA) is a legislative proposal concerning illegal content, transparent advertising, and disinformation.
+It was proposed on Dec 15, 2020, by the European Commission to update the e-Commerce Directive 2000.
+The new obligation concerning the online advertising industry is that a firm must disclose to users, in real-time, three kinds of information: (1) that they are seeing an advertisement, (2) who is providing this ad, and (3) the main parameters applied to determine why this ad targets the user.
+Firms that do not comply with the DSA risk a fine of up to 6% on their global annual turnover.
+
+The DSA may impact the online advertising industry in two ways.
+First, the competitive advantage brought by algorithms for ad targeting is likely to decrease.
+Algorithms play a key role in determining how well an ad targets the desired user, hence ad effectiveness.
+Since the new obligation requires the main parameters for ad targeting to be made publicly available, firms will learn more about their competitors' algorithms.
+Consequently, a firm might need to either improve its algorithms more rapidly than its competitors to maintain a competitive advantage or identify other ways to improve ad effectiveness.
+
+Second, firms are likely to find it challenging to determine how to display the required three kinds of information.
+Designing and running cookie banners has posed challenges to the online advertising industry already (Section 7.1.1).
+According to the new regulation, whenever a user sees an ad, a firm will be required to display a great deal of information about the targeted ad.
+Simply piling the information on top of the ad might make the appearance messy, triggering annoyance toward the ads.
+IAB Europe aims to support the industry in addressing these concerns by developing new approaches and technical standards to provide users with valid messages regarding the targeted ads they see.
+
+Overall, as a result of the DSA, firms in the online advertising industry will likely have to pay higher costs to maintain the current level of ad effectiveness, and will have to make additional investments in order to display required information without inducing user annoyance.
+As a result, profits in the online advertising industry might decrease.
+
+### Digital Markets Act
+
+The Digital Markets Act (DMA) is a proposal focusing on actors in the online advertising industry with considerable market power, regarded as "gatekeepers" in the industry.
+A gatekeeper significantly impacts the internal market, acting as an important gateway for firms using the gatekeeper's services to reach their users (European Commission 2021).
+The DMA was proposed on Dec 15, 2020, by the European Commission.
+The regulation aims to ensure an adequate level of competition in European digital markets.
+The DMA creates criteria for recognizing a firm as a gatekeeper and sets rules for these firms.
+The gatekeepers come from many sectors, including the online advertising industry.
+Gatekeeper firms that are not compliant with the DMA risk a fine of up to 10% on their annual turnover.
+
+Once in effect, the DMA will identify gatekeepers in the online advertising industry with clearly defined conditions: (1) significant impact on the internal market and active in multiple EU countries (e.g., annual turnover exceeding 6.5€ billion in the last three financial years), (2) strong intermediation position (e.g., has over 10,000 yearly active business partners in the EU), (3) stable and durable market position.
+The identified gatekeepers must comply with the prohibitions and obligations of the DMA.
+
+The obligations include allowing any business partner (e.g., a small vendor) to access data that the gatekeeper (e.g., a large publisher) has collected with regard to users' interactions with the partner.
+This access means, for example, that a gatekeeper like Facebook can no longer keep all user data to itself; a small- or medium-sized firm that posts ads on Facebook must be provided with access to the data that Facebook has collected regarding users' interactions with those ads, thereby enabling the smaller firm to carry out its own verification and analysis of ad performance.
+The obligations imposed by the DMA also prohibit the gatekeeper from discriminating in favor of its own services.
+For example, when working with publishers, a gatekeeper like Google (as a vendor) cannot treat its own Ad Technology Provider controls more favorably than other third-party frameworks that assist firms in asking for and managing user permission, such as TCF 2.0.
+Jürgensmeier and Skiera (2022) suggest an approach to measure the fair treatment of participants on an online platform.
+
+The DSA will make part of a gatekeeper's user data available for small and medium-sized firms.
+The small and medium-sized firms can draw on these data to improve the performance of online advertising via profiling and targeting, thereby potentially increasing their profits.
+In turn, the competitive advantage of the gatekeeper, which is often based on its exclusive access to user data, might decrease, thereby decreasing the gatekeeper's profit.
+
+### ePrivacy Regulation
+
+The ePrivacy Regulation (ePR) regulates various privacy-related topics, mainly concerning electronic communications within the European Union.
+It was initially proposed in 2017 by the European Commission to repeal the Privacy and Electronic Communications Directive 2002 (the so-called ePrivacy Directive (ePD)) and to complement the GDPR.
+Initially, the ePrivacy Regulation was supposed to go into effect with the GDPR on May 25, 2018, but it still has not been adopted.
+
+The ePrivacy Regulation proposes that users give their consent on a device level rather than on a website level, as is the current practice under the GDPR.
+For every internet browser on the user's desktop, smartphone, or tablet, a user would have to permit or restrict tracking and the usage of the user's data by websites.
+Such device-level consent would considerably reduce the number of decisions per user, reduce the decision cost per user, and improve the user's online browsing experience.
+
+In addition to gathering a user's consent at the device level, the ePrivacy Regulation also suggests limiting the time that a user's consent is valid.
+Thus, instead of websites obtaining a user's consent "forever," it would be limited to a pre-specified period, e.g., 6 or 12 months.
+
+Potentially moving consent to the device (browser) level could reduce the importance of CMPs for publishers if the devices (via browsers) implement their functionality.
+A downside of moving a user's consent decision to the device--browser level instead of deciding on every website is that a user does not have any information on the specific websites and apps asking for the user's permission.
+Therefore, such a practice is likely to result in most users refusing to consent to data sharing---thereby removing large amounts of data from the online advertising industry.
+For advertisers, as discussed above, less access to data implies fewer opportunities to target users, which, in turn, decreases ad prices and ultimately reduces publishers' ad revenue.
+IAB Europe (2021a) predicts that enforcement of the ePrivacy Regulation would reduce half of the revenues of the online advertising industry in the EU.
+
+### Tracking-Free Ads Coalition
+
+The Tracking-Free Ads Coalition is a coalition of members of the European Parliament, civil society organizations, and firms from across the EU.
+It aims at ending tracking, profiling, and targeting of users by the online advertising industry.
+The coalition thinks that online advertising can finance free content on the Internet even without behavioral targeting that relies on tracking and profiling users.
+The coalition wants to achieve its aims through EU legislation and concrete action to support and complement existing legal frameworks such as the GDPR.
+
+If the Tracking-Free Ads Coalition successfully stopped user tracking entirely, the online advertising industry could no longer use behavioral targeting.
+A benefit of such a situation for both the user and the industry would be that user consent for user tracking and subsequent profiling and targeting would become unnecessary.
+In such a case, the user's decision costs and firms' costs for getting and storing permission would be reduced to zero, as firms would no longer process personal data for online behavioral advertising.
+
+Instead, advertisers would increasingly have to use other forms of online advertising that do not rely on user tracking, such as contextual advertising, with lower targeting efficiency than behavioral targeting.
+In addition, it is also not clear if some of the current forms of contextual targeting could prevail, given some of them also rely on the processing of personal data.
+For example, tracking the success of contextual ad campaigns on an individual user level processes personal data.
+
+### Deviations of the GDPR's Interpretation and Enforcement
+
+A key potential benefit of the GDPR, as well as of other European privacy initiatives, is the notion of a single "European standard"---in which many firms, spanning many countries, become subject to similar requirements.
+Such standardization provides many advantages, particularly for firms whose economic activities encompass multiple European countries.
+However, these advantages diminish if member states of the European Union deviate from the "European standard".
+Such deviations can occur if countries interpret and enforce the "European standard" differently or even do not enforce the GDPR at all (e.g., Lukic, Miller, and Skiera 2022).
+Even worse, countries consist of different regions or states, and deviations might occur within these states.
+For example, in Germany, the Data Protection Authority of the state of Hamburg, as the Austrian DPA, interprets the cookie paywall implemented by publishers in Hamburg as being GDPR-compliant.
+It is doubtful that the Data Protection Authorities of other states (e.g., Baden-Wuerttemberg) would have drawn the same conclusion.
+Moreover, some privacy advocates complain about unsolved complaints about privacy abuses.
+For example, they argue that Ireland (Germany) left 192 of 196 (124 out of 176) complaints unsolved in 2020, indicating the different enforcement across countries (Owen 2021).
+Unfortunately, such deviations contradict the vision of having one "European standard" and might ultimately also hurt European users.
+
+Regional differences in interpretation and enforcement notwithstanding, the GDPR is far-reaching with its global scope, in saying that it applies to all European users, no matter where the base location of the firm is.
+Other upcoming privacy laws might take a similar approach---which might raise new questions in situations that require compliance with multiple laws that contradict each other.
+For example, each privacy law might require that a firm store the data in its country and nowhere else, or for a specific duration.
+
+## Outlook on Further Activities of Consumer Protection Agencies
+
+The introduction of the GDPR also triggered new initiatives by consumer protection agencies.
+We describe two of them in more detail: None of Your Business (Section 9.4.1) and the Irish Council for Civil Liberties (Section 9.4.2).
+
+### None of Your Business (NOYB)
+
+The European Center for Digital Rights, known as "none of your business" (NOYB), is a non-profit organization established in 2017, led by Austrian lawyer and privacy activist Max Schrems.
+With a focus on privacy issues in the private sector, NOYB aims to support the enforcement of the GDPR, the ePrivacy Regulation, and privacy regulations in general.
+The primary action of NOYB is filing complaints against firms to Data Protection Authorities and bringing cases to courts.
+The complaints cover various topics, including data transfer to non-EU areas, online and mobile tracking, and data breaches.
+For example, NOYB filed several complaints against large news websites in Germany and Austria against the PUR model (see Section 5.2.2.2).
+NOYB doubts that the user's consent is still freely given in such a cookie paywall business model.
+Moreover, NOYB launches media initiatives to disseminate knowledge of data privacy.
+For example, the website GDPRhub wiki contains databases that summarize Data Protection Authorities' and courts' decisions, commentaries, and profiles.
+Meanwhile, NOYB conducts research and develops tools that support privacy (e.g., the "advanced data protection control" (ADPC) browser extension, see Section 6.2.2).
+
+On May 31, 2021, NOYB sent over 500 draft complaints to publishers with unlawful cookie banners.
+A publisher who has received a draft complaint can go to NOYB's WeComply!
+Platform to review the case of violation, download a guide on remedying the situation, and report full compliance.
+A draft complaint will turn into a formal one if the cookie banner of the publisher under investigation has not turned lawful within one month.
+
+NOYB's criteria for a lawful cookie banner are strict, and other authorities may not agree with them (IAB Europe 2021b).
+Such disagreement may be a consequence of the fact that consumer protection agencies have largely been absent from consultations within the online advertising industry.
+More broadly, NOYB's campaign may serve as a signal to the online advertising industry that grey areas regarding interpretations of the GDPR are likely to shrink after the court judgments on the large wave of complaints.
+These complaints may also influence firms' choices with regard to the locations of their headquarters: Since complaints always go to local Data Protection Authorities where the headquarters of firms are situated, firms may strategically choose to locate their headquarters in places where Data Protection Authorities interpret regulations more loosely.
+
+The strict rules for cookie banners set by NOYB are likely to prevent circumstances in which users are lured into accepting data processing.
+Therefore, the activities of NOYB may ultimately limit the number of users that can be tracked, thereby diminishing the amount of data available for tracking, profiling, and targeting.
+Consequently, ad prices may decrease, reducing publishers' revenues.
+
+### Irish Council for Civil Liberties
+
+In early 2018, Dr. Johnny Ryan contacted Data Protection Authorities in Ireland and the UK to "blow the whistle" about a massive data breach within the online advertising industry's real-time bidding (RTB) system.
+One of the main criticisms is that any data that the publisher reveals in RTB can spread to many other actors.
+Johnny Ryan outlines that it is technically feasible to share a wide range of personal data along the chain outlined in Figure 6.
+He presented evidence showing that real-time bidding data had allegedly been used to influence a Polish election, to profile Irish people who secretly have HIV, and to track homeless people's movements in San Francisco.
+Such sharing raises privacy concerns, in particular, as the user most often did not provide consent for sharing personal data.
+It is, however, less apparent if and to what extent sharing actually occurs (Ada, Abou Nabout, and McDonnell Feit 2022).
+
+In November 2021, the Belgian Data Protection Authority (APD) announced that it is close to finalizing a draft ruling on its investigation of the RTB ecosystem and specifically IAB Europe's role within the Transparency and Consent Framework (TCF).
+The draft ruling will identify infringements of the GDPR by IAB Europe.
+Still, it will also find that those infringements should be capable of being remedied within six months following the issuing of the final ruling, in a process that would involve the APD overseeing the execution of an agreed action plan by IAB Europe.
