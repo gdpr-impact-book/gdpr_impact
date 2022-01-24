@@ -15,13 +15,13 @@ Publishers and advertisers can use such tracking of a user over time to generate
 Numerous technologies exist for user tracking; in what follows, we discuss some of the most important ones.
 For clarity of presentation, in our discussion, we classify the various technologies along two main dimensions:
 
--   The number of devices on which the user is tracked: just one device (i.e., single-device tracking) versus multiple devices (i.e., cross-device tracking);
+-   The number of *devices* on which the user is tracked: just one device (i.e., single-device tracking) versus multiple devices (i.e., cross-device tracking);
 
--   The number of websites on which the user is tracked: a single publisher's website (i.e., first-party website) versus multiple websites (i.e., third-party websites).
+-   The number of *websites* on which the user is tracked: a single publisher's website (i.e., first-party website) versus multiple websites (i.e., third-party websites).
 
 Figure 7 presents this classification.
 
-![Figure 7:	Categorization of User Tracking Technologies](images/figure7.png "Figure 7:	Categorization of User Tracking Technologies")
+![Figure 7: Categorization of User Tracking Technologies](images/figure7.png "Figure 7: Categorization of User Tracking Technologies")
 
 ### Single-Device User Tracking
 
@@ -177,9 +177,9 @@ NetID was established in March 2018 as a foundation to offer an independent alte
 Table 1 presents a comparison of the user tracking technologies discussed in the previous subsections.
 We compare the various technologies by the following six criteria:
 
--   **User Identification**:Describes whether a user tracking technology identifies a user on a first-party website (e.g., the publisher's website) or third-party website (e.g., other publishers' websites), and whether a user tracking technology identifies a user on a single device (e.g., only on a desktop computer) or on multiple devices (e.g., on a desktop computer and a mobile phone).
+-   **User Identification**: Describes whether a user tracking technology identifies a user on a first-party website (e.g., the publisher's website) or third-party website (e.g., other publishers' websites), and whether a user tracking technology identifies a user on a single device (e.g., only on a desktop computer) or on multiple devices (e.g., on a desktop computer and a mobile phone).
 
--   **Storage of User Identifier**:Describes whether a user tracking technology stores a user's identifier (e.g., a cookie) on the user's side (i.e., the user's client, for example, a user's browser) or on the firm's side (i.e., the firm's server).
+-   **Storage of User Identifier**: Describes whether a user tracking technology stores a user's identifier (e.g., a cookie) on the user's side (i.e., the user's client, for example, a user's browser) or on the firm's side (i.e., the firm's server).
 
 -   **Storage of Information on User**: Describes whether a user tracking trechnology stores a user"s information on the user's side (i.e., the user's client, for example, a user's browser) or on the firm's side (i.e., the firm's server).
 
@@ -211,7 +211,7 @@ Finally, targeting refers to using these profiles to treat some users differentl
 For advertisers, targeting involves selecting profiles of users who are likely to be suitable audiences for a specific ad (e.g., women with kids), or conversely, selecting ads that are likely to be suitable for a specific user.
 For a publisher, targeting generally involves presenting users with content (e.g., news content for a news publisher) that suits their interests.
 
-![Figure 8:	Relationship between Tracking, Profiling and Targeting for Online Advertising](images/figure8.png "Figure 8:	Relationship between Tracking, Profiling and Targeting for Online Advertising")
+![Figure 8: Relationship between Tracking, Profiling and Targeting for Online Advertising](images/figure8.png "Figure 8: Relationship between Tracking, Profiling and Targeting for Online Advertising")
 
 We note that herein, we focus on targeting users on the basis of data that have been collected about them through tracking technologies; this form of targeting is referred to as "behavioral targeting" in Figure 9.
 It contains "retargeting", also referred to as "remarketing" or "behavioral retargeting" (Lambrecht and Tucker 2013; Bleier and Eisenbeiss 2015; Sahni, Narayanan, and Kalyanam 2019).
@@ -224,7 +224,7 @@ Figure 9 outlines that "contextual targeting" is the other major form of targeti
 It uses the context in which the user appears (e.g., viewing a news forum on investment advice) to draw conclusions about the user's interests and the ads that are likely to be relevant for her.
 For example, a user reading an article about investment advice might be interested in financial products.
 
-![Figure 9:	Forms of Targeting in Online Advertising](images/figure9.png "Figure 9:	Forms of Targeting in Online Advertising")
+![Figure 9: Forms of Targeting in Online Advertising](images/figure9.png "Figure 9: Forms of Targeting in Online Advertising")
 
 ### Importance for Advertisers
 
@@ -285,7 +285,7 @@ While it is possible to measure a website's overall number of page impressions w
 Advertisers often prefer publishers with an extensive reach.
 Accordingly, publishers are interested in reporting a high reach, and advertisers fear that publishers might over-report their reach.
 To avoid a lack of trust, publishers often ask a (trusted) third party to conduct the measurement, such as AGOF in Germany, which relies on information provided by INFOnline.
-AGOF also provides examples of their reports on their website (e.g., at www.agof.de/studien/daily-digital-facts/monatsberichte/, however, only in German).
+AGOF also provides examples of their reports on their website (e.g., at [www.agof.de/studien/daily-digital-facts/monatsberichte](www.agof.de/studien/daily-digital-facts/monatsberichte)/, however, only in German).
 
 The fourth benefit of tracking relates to the fact that the price that a publisher realizes from an ad impression is a function of the advertiser's willingness to pay (WTP) to display an ad to a particular user on the publisher's website.
 As discussed above, advertisers value the capacity to target specific users; thus, information that the publisher obtains about the user from tracking can, in theory, increase or decrease ad prices (e.g., Board 2009, Chen and Stallaert 2014, Levin and Milgrom 2010).
@@ -306,12 +306,18 @@ Empirical evidence suggests, however, that, on average, more information leads t
 
 ## Implications for Users
 
+There is little doubt that tracking, profiling and targeting benefit advertisers and publishers.
+It is, however, much more challenging to evaluate how users are affected by such tracking.
+In particular, users face a trade-off between certain benefits---such as utility from a more personalized browsing experience---and drawbacks, particularly a loss in privacy.
+In what follows, we elaborate on these benefits and drawbacks.
+
 ### Personalization of Content
 
 Personalization of content on publishers' websites---such as news feeds on social networks or product recommendations on online shopping or streaming platforms---can increase users' utility by providing them with experiences more directly related to their interests (Celis et al. 2019).
 It is important to acknowledge, however, that in providing personalized content, a publisher may seek to enhance not only the user's utility but also its own profit.
 Though these two perspectives may be aligned---because it is hard to make a profit by exposing a user to products or content that she is not interested in---they can still differ.
 For example, if product A provides slightly more utility to a user than product B, but the firm makes much more profit on product B, the firm is tempted to recommend product B.
+
 Content personalization may also have certain disadvantages from the user's perspective.
 because an algorithmic recommendation can result in a "filter bubble", also referred to as an "echo chamber".
 In a filter bubble, a user is exposed only to content that is aligned with the user's own cultural background or ideology---a situation that is, at least in the long-run, in the interest of neither the user nor society.
@@ -346,8 +352,8 @@ Regardless of what users actually prefer, and as we will see below, regulators h
 
 The main takeaways from Section 3 are:
 
-Cookies are a popular tracking technology, but they only track a user's behavior on one device and in one browser.
-Furthermore, users can easily delete cookies or prevent that firms set cookies.
+-   Cookies are a popular tracking technology, but they only track a user's behavior on one device and in one browser.
+    Furthermore, users can easily delete cookies or prevent that firms set cookies.
 
 -   Single-Sign-On (SSO) is the most favorable user tracking technology from a firm's perspective.
     However, not all firms provide users with sufficient value to justify signing up for an SSO service.

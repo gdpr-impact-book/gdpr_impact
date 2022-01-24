@@ -37,7 +37,8 @@ It also outlines the TCF purposes and Special Features pursued by the publisher 
 We recorded all this information for each of our 38 publishers.
 Note that a publisher can also work with vendors who are not on the GVL, and these vendors do not appear on the list from the user interface.
 
-![Figure 21: User Interface of the TCF CMP Validator. Note: the top right yellow square highlights the icon of the CMP Validator extension](images/figure21.png "Figure 21: User Interface of the TCF CMP Validator")
+![Figure 21: User Interface of the TCF CMP Validator. \
+Notes: the top right yellow square highlights the icon of the CMP Validator extension](images/figure21.png "Figure 21: User Interface of the TCF CMP Validator")
 
 The CMP Validator does not specify the purposes pursued by each vendor.
 To obtain this information, we used the GVL dataset; see Sections 7.4.1.1 and 7.5.1 for information on what the GVL is and how it works to centralize vendors' permission requests.
@@ -192,7 +193,7 @@ Had the user not spent this time making decisions, she could have visited 19.79 
 The decision cost for this scenario is so high that it hampers a user's browsing experience by taking up 61% of the entire browsing time.
 In practice, this case is hardly feasible.
 
-![Table 21:	Summary of User Decision Cost Estimation under Different Scenarios](images/table21.JPG "Table 21:	Summary of User Decision Cost Estimation under Different Scenarios")
+![Table 21: Summary of User Decision Cost Estimation under Different Scenarios](images/table21.JPG "Table 21: Summary of User Decision Cost Estimation under Different Scenarios")
 
 In Case Medium, the average user spends 15.46 minutes per day making decisions on permissions, 24% of the overall browsing time.
 Had she not spent this time making decisions, the user could have visited 3.87 more publisher websites.
