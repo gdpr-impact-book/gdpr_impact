@@ -24,7 +24,7 @@
 <meta name="author" content="Bernd Skiera, Klaus Miller, Yuxi Jin, Lennart Kraft, Rene Laub, Julia Schmitt" />
 
 
-<meta name="date" content="2022-01-17" />
+<meta name="date" content="2022-01-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -269,7 +269,7 @@ Note that in Table 8 and throughout this section, we use the term “vendors” 
 </div>
 <div id="challenges-of-specifying-purposes-for-permission" class="section level3" number="7.1.1">
 <h3><span class="header-section-number">7.1.1</span> Challenges of Specifying Purposes for Permission</h3>
-<p>Step 1 (“specifying purposes for permission”) describes how a firm tries to comply with Article 5 para.
+<p>Step 1 (“specifying purposes for permission”) describes how a firm tries to comply with Article 13 para.
 1 point (b) of the GDPR: “Personal data shall be collected for specified, explicit and legitimate purposes.” In other words, in this step, the firm must identify legitimate purposes for using the processed data and specify these purposes in a clear (explicit) manner.
 Moreover, according to Article 13 para.
 1 of the GDPR, a firm needs to communicate the specified purposes with its users.
@@ -287,8 +287,10 @@ Indeed, there are disparities in interpreting the GDPR compliance among the Data
 Hence, it is difficult for a firm to find a GDPR-compliant specification that is robust to all interpretations.</p>
 <p>Another aspect that makes accuracy challenging is the possibility of heterogeneous specifications of similar purposes, as in our previous example of Firm A and Firm B. Suppose that Firm A transfers data to Firm B. In order for this transfer to take place, both firms must ensure that they have user permission for the two purposes specified by Firm B. Due to the different labels, Firm B may find it challenging to decide whether the purposes specified by Firm A accurately match its own specified purposes.</p>
 <p><em>Challenge 2: Explicitness.</em> The GDPR requires that a firm’s data collection activities be made explicit, i.e., fully transparent to the user.
-However, the GDPR does not indicate the exact information that firms must provide in order to achieve sufficient explicitness.Accordingly, firms face the challenge of identifying which information will provide users and other firms with a sense of explicitness.</p>
-<p><em>Challenge 3: Convenient Communication.</em> Convenient communication entails using wording that reduces the chances of misunderstanding, while remaining concise and easily accessible to users and other firms.Again, because the GDPR does not specify which wordings should be used to describe the various purposes of data collection, it is challenging for a firm to identify the optimal wordings in this regard.
+However, the GDPR does not indicate the exact information that firms must provide in order to achieve sufficient explicitness.
+Accordingly, firms face the challenge of identifying which information will provide users and other firms with a sense of explicitness.</p>
+<p><em>Challenge 3: Convenient Communication.</em> Convenient communication entails using wording that reduces the chances of misunderstanding, while remaining concise and easily accessible to users and other firms.
+Again, because the GDPR does not specify which wordings should be used to describe the various purposes of data collection, it is challenging for a firm to identify the optimal wordings in this regard.
 In particular, firms may face a trade-off between using more words to achieve accuracy and making the text concise and accessible (Kulyk et al. 2020).</p>
 </div>
 <div id="challenges-of-handling-permission" class="section level3" number="7.1.2">
@@ -345,7 +347,12 @@ It launched an updated version of the TCF, TCF 2.0, in August 2019.
 The TCF is an industry initiative, aiming at providing a solution to get user permission with guidelines and tools.
 In order to adopt the solution, a firm has to register with IAB Europe, denoted as participating in TCF in the following sections.
 The TCF was formulated on the basis of extensive consultation with representatives from different fields in the online advertising industry—including technology vendors (Xandr), CMPs (OneTrust), and publishers (The Telegraph).</p>
-<p>Specifically, the TCF aims to introduce a standard that - creates a standardized terminology of purposes shared by all participants; - provides tools to facilitate asking for permission (Global Vendor List) and storing permission (Transparency and Consent String); and - creates a procedure to check permissions for processing personal data before transferring user data between firms.</p>
+<p>Specifically, the TCF aims to introduce a standard that</p>
+<ul>
+<li><p>creates a standardized terminology of purposes shared by all participants;</p></li>
+<li><p>provides tools to facilitate asking for permission (Global Vendor List) and storing permission (Transparency and Consent String); and</p></li>
+<li><p>creates a procedure to check permissions for processing personal data before transferring user data between firms.</p></li>
+</ul>
 <p>Note that each bullet point corresponds to one of the three steps described in the previous section, and summarized in Table 8: specifying purposes for permission, handling permission, and checking permission for data transfer.</p>
 <p>In what follows, we provide a step-by-step explanation of how, in practice, a firm can use the TCF to execute each of the three steps and overcome the associated challenges.
 The TCF was envisioned as a well-documented and accepted standard that should help firms to comply with the GDPR.
@@ -355,6 +362,10 @@ We will discuss their concerns in more detail in Section 9.4.2.</p>
 </div>
 <div id="mitigating-challenges-in-specifying-purposes-for-permission" class="section level2" number="7.3">
 <h2><span class="header-section-number">7.3</span> Mitigating Challenges in Specifying Purposes for Permission</h2>
+<p>The first step in getting permission for personal data processing is to specify the purposes for such processing.
+As noted in Section 7.1.1, the main challenges a firm faces in this step include formulating the specifications in a manner that is accurate, explicit, and convenient to communicate with users and other firms.
+To mitigate these challenges, the TCF provides a list of Purposes, Special Purposes, Features, Special Features, and Stacks.
+We elaborate on each of these concepts in what follows.</p>
 <div id="facilitating-accuracy-of-communication" class="section level3" number="7.3.1">
 <h3><span class="header-section-number">7.3.1</span> Facilitating Accuracy of Communication</h3>
 <div id="purposes" class="section level4" number="7.3.1.1">
@@ -363,7 +374,7 @@ We will discuss their concerns in more detail in Section 9.4.2.</p>
 To overcome these challenges, the TCF proposes ten specific purposes, which are shown in Table 9.</p>
 <div class="figure">
 <img src="images/table9.JPG" title="Specification of Purposes in the Transparency and Consent Framework (TCF) 2.0" alt="" />
-<p class="caption">Table9: Specification of Purposes in the Transparency and Consent Framework (TCF) 2.0</p>
+<p class="caption">Table 9: Specification of Purposes in the Transparency and Consent Framework (TCF) 2.0</p>
 </div>
 <p>TCF uses the term “Purpose” to refer to each of the ten purposes specified in Table 9.
 To avoid confusion, throughout the remainder of this section, we refer to “Purpose” specified by the TCF as a “TCF purpose” and refer to a specific TCF purpose (e.g., Purpose 2) as “Purpose N” where “N” is an integer from 1 to 10.</p>
@@ -435,8 +446,8 @@ A green cell indicates that a particular legal basis (column) is applicable to a
 In almost all cases in which a particular legal basis applies, the user has the right to make a decision, i.e., to provide/deny consent, or to accept/object to the legitimate interest.
 The only exception is for Special Purposes, which are grounded in the legal basis of legitimate interest, and to which the user cannot object.</p>
 <div class="figure">
-<img src="images/figure15.JPG" title="Figure 15: Legal Bases for (Special) Purposes and (Special) Features in Transparency and Consent Framework (TCF) 2.0" alt="" />
-<p class="caption">Figure 15: Legal Bases for (Special) Purposes and (Special) Features in Transparency and Consent Framework (TCF) 2.0</p>
+<img src="images/figure15.JPG" title="Figure 15: Legal Bases for (Special) Purposes and (Special) Features in the Transparency and Consent Framework (TCF) 2.0" alt="" />
+<p class="caption">Figure 15: Legal Bases for (Special) Purposes and (Special) Features in the Transparency and Consent Framework (TCF) 2.0</p>
 </div>
 </div>
 </div>
@@ -452,8 +463,8 @@ As indicated by some DPAs (e.g., CNIL in France), displaying Stacks instead of T
 Nevertheless, the TCF still requires publishers to enable granular choices for each TCF purpose.
 Part of the convenience brought by the TCF might also be that users get progressively used to semi-standardized interfaces and standardized terminology so that they are increasingly efficient in making their choices over time.</p>
 <div class="figure">
-<img src="images/table13.JPG" title="Table 13: Example of a Stack in Transparency and Consent Framework (TCF) 2.0" alt="" />
-<p class="caption">Table 13: Example of a Stack in Transparency and Consent Framework (TCF) 2.0</p>
+<img src="images/table13.JPG" title="Table 13: Example of a Stack in the Transparency and Consent Framework (TCF) 2.0" alt="" />
+<p class="caption">Table 13: Example of a Stack in the Transparency and Consent Framework (TCF) 2.0</p>
 </div>
 <p>Note that different Stacks may contain overlapping TCF purposes.
 When selecting from the pool of 42 Stacks, a publisher cannot choose Stacks with the same TCF purpose.
@@ -520,8 +531,8 @@ A publisher can use a commercial CMP service or register its own (private) CMP.
 As of November 2021, there are 170 registered CMPs in the TCF.
 53 (31%) of them are private CMPs.</p>
 <p>A TCF-registered CMP provides technical support to design and run a cookie banner.
-More importantly, only TCF-registered CMPs can create, update and store the Transparency and Consent String, a tool to store consent, which we will introduce in the following subsection.
-TCF-registered CMPs must follow the TCF guidelines.
+More importantly, only TCF-registered CMPs can create, update and store the Transparency and Consent String, a tool to store consent, which we will introduce in the following subsection.</p>
+<p>TCF-registered CMPs must follow the TCF guidelines.
 IAB Europe randomly audits CMPs for proper TCF implementation on publishers’ websites and can admonish the CMP if violations occur.
 After three warnings, TCF can suspend a CMP, which means that all the publishers can no longer use the suspended CMP.
 Thus, IAB Europe creates a strong incentive for CMPs to ensure that the publishers correctly implement TCF when using their service.</p>
@@ -672,7 +683,7 @@ The vendor uses only legitimate interest to support Purpose 7 and Purpose 8.
 The vendor uses either consent or legitimate interest to support Purpose 2 and Purpose 9, and in both cases the default legal basis is legitimate interest.</p>
 <div class="figure">
 <img src="images/table15.JPG" title="Legal Bases for Purposes under TCF Specification of an Example Vendor (here: Emerse Sverige AB)" alt="" />
-<p class="caption">Legal Bases for Purposes under TCF Specification of an Example Vendor (here: Emerse Sverige AB)</p>
+<p class="caption">Table 15: Legal Bases for Purposes under TCF Specification of an Example Vendor (here: Emerse Sverige AB)</p>
 </div>
 <p>A publisher has three options for the vendor for each purpose:</p>
 <ul>
@@ -698,8 +709,8 @@ In particular, seven outcomes are possible (see Figure 19); we classify these ou
 <ul>
 <li><p>Deal to transfer data upon consent.</p></li>
 <li><p>Deal to transfer data upon legitimate interest.</p></li>
-<li><p>No deal due to mismatched legal basis.
-• No deal due to mismatched pursuit status.</p></li>
+<li><p>No deal due to mismatched legal basis.</p></li>
+<li><p>No deal due to mismatched pursuit status.</p></li>
 <li><p>No deal due to no pursuit.</p></li>
 <li><p>No deal due to no user consent.</p></li>
 <li><p>No deal due to user’s objection to legitimate interest.</p></li>
