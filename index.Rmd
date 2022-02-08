@@ -9,6 +9,12 @@ site: bookdown::bookdown_site
 
 This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by [Bernd Skiera](www.skiera.de), [Klaus Miller](https://sites.google.com/view/klausmiller), [Yuxi Jin](https://www.marketing.uni-frankfurt.de/en/professoren/skiera/team/doctoral-students/yuxi-jin.html), [Lennar Kraft](https://lennartkraft.com/), [René Laub](https://www.marketing.uni-frankfurt.de/de/professoren/skiera/team/wissenschaftliche-mitarbeiter/rene-laub.html) and Julia Schmitt.
 
+The book is also available for download on Leanpub:
+
+<https://leanpub.com/gdpr-impact>
+
+A paperback version will be available soon.
+
 ![](images/front_cover.jpg){width="209"}
 
 **What will you learn from this book?**
