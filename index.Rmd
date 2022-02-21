@@ -13,10 +13,9 @@ The book is also available for download on Leanpub:
 
 <https://leanpub.com/gdpr-impact>
 
-A print version of the book is available on Amazon: 
+A paperback version of the book is available on Amazon: 
 <https://www.amazon.de/Impact-General-Protection-Regulation-Advertising/dp/3982417309/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1645461542&sr=8-3>
 
-A paperback version will be available soon.
 
 ![](images/front_cover.jpg){width="209"}
 
