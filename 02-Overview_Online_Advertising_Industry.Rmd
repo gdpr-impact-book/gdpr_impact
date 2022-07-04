@@ -45,7 +45,7 @@ The ad-selling market is highly concentrated; indeed, in 2020, the top 10 publis
 Google and Facebook are by far the two largest publishers in the Western world.
 The ad-buying marketing is far less concentrated, i.e., there are no advertisers that dominate the demand side in a manner comparable to Google and Facebook on the supply side.
 
-![Figure 2: Size and Share of Figure 2: Different Formats of Online Advertising in the US (IAB 2021)](images/figure2.png)
+![Figure 2: Size and Share of Different Formats of Online Advertising in the US (IAB 2021)](images/figure2.png)
 
 Figure 3 outlines the digital advertising spend per capita for selected European countries (IAB 2020).
 Advertising expenditures per internet user are, by far, highest in the UK (324.70€), followed by Norway (231.30€), Sweden (229.40€), Switzerland (212.40€) and Denmark (194.80€).
