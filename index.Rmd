@@ -7,7 +7,7 @@ site: bookdown::bookdown_site
 
 # Overview {.unnumbered}
 
-This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by [Bernd Skiera](www.skiera.de), [Klaus Miller](https://sites.google.com/view/klausmiller), [Yuxi Jin](https://www.marketing.uni-frankfurt.de/en/professoren/skiera/team/doctoral-students/yuxi-jin.html), [Lennar Kraft](https://lennartkraft.com/), [René Laub](https://www.marketing.uni-frankfurt.de/de/professoren/skiera/team/wissenschaftliche-mitarbeiter/rene-laub.html) and Julia Schmitt.
+This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by [Bernd Skiera](https://www.marketing.uni-frankfurt.de/professoren/skiera/prof-dr-bernd-skiera.html), [Klaus Miller](https://sites.google.com/view/klausmiller), [Yuxi Jin](https://www.marketing.uni-frankfurt.de/en/professoren/skiera/team/doctoral-students/yuxi-jin.html), [Lennar Kraft](https://lennartkraft.com/), [René Laub](https://www.marketing.uni-frankfurt.de/de/professoren/skiera/team/wissenschaftliche-mitarbeiter/rene-laub.html) and Julia Schmitt.
 
 The book is also available for download on Leanpub:
 
@@ -39,4 +39,4 @@ Anyone interested in learning how and why the online advertising industry benefi
 
 **Who wrote this book?**
 
-The European Research Council provided Professor Skiera at Goethe University Frankfurt (Germany) with a substantial (ERC Advanced) research grant to examine the economic consequences of stronger restrictions on tracking technologies. Professor Skiera and his team pursued several empirical projects to demonstrate these consequences.
+The European Research Council provided Professor Skiera at Goethe University Frankfurt (Germany) with a substantial (ERC Advanced) research grant to examine the economic consequences of stronger restrictions on tracking technologies. Professor Skiera and his team pursued several empirical projects to demonstrate these consequences. Visit our [website](https://www.marketing.uni-frankfurt.de/professoren/skiera/erc-advanced-grant.html).
