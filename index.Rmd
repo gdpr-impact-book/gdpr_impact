@@ -8,7 +8,7 @@ site: bookdown::bookdown_site
 # Overview {.unnumbered}
 
 
-This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by [Bernd Skiera](https://www.marketing.uni-frankfurt.de/abteilungen/marketing/professoren/skiera/prof-dr-bernd-skiera.html), [Klaus Miller](https://sites.google.com/view/klausmiller), [Yuxi Jin](https://www.marketing.uni-frankfurt.de/en/professoren/skiera/team/doctoral-students/yuxi-jin.html), [Lennart Kraft](https://lennartkraft.com/), [René Laub](https://www.marketing.uni-frankfurt.de/de/professoren/skiera/team/wissenschaftliche-mitarbeiter/rene-laub.html) and [Julia Schmitt](https://de.linkedin.com/in/julia-schmitt-878853108).
+This website contains the online version of the book **"The Impact of the General Data Protection Regulation (GDPR) on the Online Advertising Market"** written by [Bernd Skiera](https://www.marketing.uni-frankfurt.de/professoren/skiera/prof-dr-bernd-skiera.html), [Klaus Miller](https://sites.google.com/view/klausmiller), [Yuxi Jin](https://www.marketing.uni-frankfurt.de/en/professoren/skiera/team/doctoral-students/yuxi-jin.html), [Lennart Kraft](https://lennartkraft.com/), [René Laub](https://www.marketing.uni-frankfurt.de/de/professoren/skiera/team/wissenschaftliche-mitarbeiter/rene-laub.html) and [Julia Schmitt](https://de.linkedin.com/in/julia-schmitt-878853108).
 
 
 The book is available in the following versions:
